@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    int x = 12;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h1>@DateTime.Now.ToString("dd-MM-yyyy")</h1>
+    <h2>Value = @x</h2>
+    <h2>Sum = @(3+4)</h2>
+
+    @{
+        int a = 4;
+        int b = 5;
+        int c = a + b;
+    }
+
+    <h2>Sum of @a + @b = @c</h2>
+    <h3>My Email is - fatima.d@cgg.gov.in</h3>
+    <h3>My Name is - @@fatima</h3>
+
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
