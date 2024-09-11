@@ -11,7 +11,7 @@ namespace WebApplication1.Repository
         }
         public BookModelcs GetBookById(int id)
         {
-            return DataSource().Where(x => x.Id == id).FirstOrDefault();
+            return DataSource().Where(x => x.Id == id).FirstOrDefault()??new BookModelcs();
         }
 
         public List<BookModelcs> SearchBook(string title, string authorName)

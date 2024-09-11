@@ -1,3 +1,5 @@
+using Microsoft.Extensions.FileProviders;
+
 namespace WebApplication1
 {
     public class Program
@@ -8,6 +10,9 @@ namespace WebApplication1
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+#if DEBUG
+            builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+#endif
 
             var app = builder.Build();
 
@@ -21,6 +26,11 @@ namespace WebApplication1
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider=new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory() , "MyStaticFiles")),
+                RequestPath="/MyStaticFiles"
+            });
 
             app.UseRouting();
 

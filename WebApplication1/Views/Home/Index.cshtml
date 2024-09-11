@@ -1,23 +1,147 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-    int x = 12;
+    // int x = 12;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <h1>@DateTime.Now.ToString("dd-MM-yyyy")</h1>
-    <h2>Value = @x</h2>
-    <h2>Sum = @(3+4)</h2>
+@* <div class="text-center">
+        <h1 class="display-4">Welcome to book store application</h1>
+        <h2>This is message from runtime compilation new update again nnnn hi</h2>
+        <h3>No new changes added xxxx yyyy zzzz</h3>
+    <img src="~/images/cgg.gif" class="logo"/>
+    <img src="~/mystaticfiles/dummy.jpg" /> *@
+    @*  <h1>@DateTime.Now.ToString("dd-MM-yyyy")</h1>
+      <h2>Value = @x</h2>
+      <h2>Sum = @(3+4)</h2> *@
 
+    @*  @{
+          int a = 4;
+          int b = 5;
+          int c = a + b;
+      } *@
+
+    @* <h2>Sum of @a + @b = @c</h2>
+      <h3>My Email is - fatima.d@cgg.gov.in</h3>
+      <h3>My Name is - @@fatima</h3> *@
     @{
-        int a = 4;
-        int b = 5;
-        int c = a + b;
+        int a = 10;
+        int b = 0;
+        var list = new List<int>() { 1, 2, 3, 4, 5 };
     }
+    @* @if (a==5)
+    {
+        a++;
+        <h1>Hello from if block and value = @a</h1>
+    }
+    else if(a==10)
+    {
+        <h1>Hello from else if block</h1>
 
-    <h2>Sum of @a + @b = @c</h2>
-    <h3>My Email is - fatima.d@cgg.gov.in</h3>
-    <h3>My Name is - @@fatima</h3>
+    }
+    else
+    {
+        <h1>Hello from else  block</h1>
+    } *@
 
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@* 
+    <h1>Ternary - @(a==10?b=10:b=5)</h1>
+    <h1>Value of b = @b</h1> *@
+ @*    @switch (a)
+    {
+        case 1:
+            <h1>Iam 1</h1>
+            break;
+        case 2:
+            <h1>Iam 2</h1>
+            break;
+        case 3:
+            <h1>Iam 3</h1>
+            break; 
+        case 4:
+            <h1>Iam 4</h1>
+            break;
+        default:
+            <h1>Iam default</h1>
+            break;
+    } *@
+   @*  @for (int i = 0; i < 10; i++)
+    {
+        <h1>Welcome to book store app with index @i</h1>
+    } *@
+   @*  @foreach (var item in list)
+    {
+        <h1>@item</h1>
+    } *@
+     @* <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> *@
+@* </div> *@
+ <section class="text-center p-3" style="background-color:#e2e2e2">
+    <div class="container">
+        <h1>Welcome to Book Store</h1>
+        <p class="lead text-muted">
+           jasklakjlsak;lsak;ldsak jlkadjlkdsldsk;ldska; jlksaKHKJHFDDKJKDLJFSK
+           KJDSLKLKLS hfkjfkjlkjlkjdl hkjdfskdkfdlkjflds
+        </p>
+        <p><a href="#" class="btn btn-primary my-2">Search Books</a></p>
+    </div>
+
+</section>
+<div class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+         <div class="col-md-4">
+             <div class="card mb-4 shadow-sm">
+                 <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/thumbnail"></svg>
+                 <div class="card-body">
+                     <p class="card-text"> This section will be used to display short description of book</p>
+                     <div class="d-flex justify-content-between align-items-center">
+                         <div class="btn-group">
+                             <a href="#" class="btn btn-sm btn-outline-secondary">View Details</a>
+                         </div>
+                         <small class="text-muted">Author Name</small>
+
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"></svg>
+                    <div class="card-body">
+                        <p class="card-text"> This section will be used to display short description of book</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">View Details</a>
+                            </div>
+                            <small class="text-muted">Author Name</small>
+
+                        </div>
+                    </div>
+                </div>
+         </div>
+         <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/thumbnail"></svg>
+                    <div class="card-body">
+                        <p class="card-text"> This section will be used to display short description of book</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">View Details</a>
+                            </div>
+                            <small class="text-muted">Author Name</small>
+
+                        </div>
+                    </div>
+                </div>
+         </div>
+      </div>
+     
+    </div>
+</div> 
+@section Scripts{
+<script>
+    $(document).ready(function () {
+        alert("hello");
+    })
+</script>
+}
+
+ 
