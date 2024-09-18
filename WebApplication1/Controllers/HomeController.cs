@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Dynamic;
 using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
@@ -12,9 +13,30 @@ namespace WebApplication1.Controllers
         {
             _logger = logger;
         }
+        [ViewData]
+        public string CustomProperty { get; set; }
+        [ViewData]
+        public BookModelcs Book { get; set; }
+        [ViewData]
+        public string Title { get; set; }
 
         public IActionResult Index()
         {
+            //ViewBag.Name = "CGG";
+            //ViewBag.Name = "Fathima";
+            //ViewBag.Data = new { Id = 1, Name = "Fathima" };
+            //dynamic data = new ExpandoObject();
+            //data.Id = 1;
+            //data.Name = "Fathima";
+            //ViewBag.Data = data;
+
+            //ViewBag.Type = new BookModelcs() { Id = 12, Author = "author" };
+            //ViewData["property1"] = "Fathima";
+            //ViewData["book"] = new BookModelcs() { Id = 1, Author = "Fathima" };
+            //ViewData["Title"] = "Home Page from controller";
+            //CustomProperty = "Custom Value";
+            Book = new BookModelcs() { Id = 14, Author = "Me" };
+            Title = "Home Page";
             return View();
         }
 
@@ -24,6 +46,11 @@ namespace WebApplication1.Controllers
         }
 
         public IActionResult AboutUs()
+        {
+            ViewData["Title"] = "AboutUs Page from Controller ";
+            return View();
+        }
+        public IActionResult ContactUs()
         {
             return View();
         }

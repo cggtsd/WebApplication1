@@ -3,28 +3,48 @@
   "WorkspaceRootPath": "C:\\dotnet\\WebApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\book\\getallbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\book\\getallbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\tempview\\myview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\tempview\\myview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\webapplication1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\webapplication1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\book\\getbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\book\\getbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\home\\contactus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\home\\contactus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\repository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,12 +55,8 @@
       "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\bookmodelcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\book\\getallbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\book\\getallbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,137 +66,188 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GetAllBooks.cshtml",
-              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Book\\GetAllBooks.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Book\\GetAllBooks.cshtml",
-              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Book\\GetAllBooks.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Book\\GetAllBooks.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T05:49:28.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BookRepository.cs",
-              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Repository\\BookRepository.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Repository\\BookRepository.cs",
-              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Repository\\BookRepository.cs",
-              "RelativeToolTip": "WebApplication1\\Repository\\BookRepository.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAkAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T05:45:26.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Controllers\\BookController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\BookController.cs",
-              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Controllers\\BookController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\BookController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAA3wAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T10:07:40.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Program.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
               "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Program.cs",
               "RelativeToolTip": "WebApplication1\\Program.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAzwCEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwCgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T10:05:35.656Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBEAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T09:00:04.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAswA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T06:29:07.211Z",
+              "WhenOpened": "2024-09-18T10:58:45.012Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MyView.cshtml",
-              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\TempView\\MyView.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\TempView\\MyView.cshtml",
-              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\TempView\\MyView.cshtml",
-              "RelativeToolTip": "WebApplication1\\TempView\\MyView.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T10:32:13.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WebApplication1.csproj",
-              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
-              "RelativeDocumentMoniker": "WebApplication1\\WebApplication1.csproj",
-              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
-              "RelativeToolTip": "WebApplication1\\WebApplication1.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-02T10:14:56.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AboutUs.cshtml",
-              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Home\\AboutUs.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\AboutUs.cshtml",
-              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Home\\AboutUs.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Home\\AboutUs.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T10:27:49.829Z",
+              "WhenOpened": "2024-09-18T09:24:19.461Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "GetBook.cshtml",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Book\\GetBook.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Book\\GetBook.cshtml",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Book\\GetBook.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Book\\GetBook.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-13T09:20:23.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T05:58:37.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T10:12:19.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ContactUs.cshtml",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Home\\ContactUs.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\ContactUs.cshtml",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Home\\ContactUs.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\ContactUs.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-18T09:10:38.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AboutUs.cshtml",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Home\\AboutUs.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\AboutUs.cshtml",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Home\\AboutUs.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\AboutUs.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T10:17:50.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAB+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T09:26:28.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetAllBooks.cshtml",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Book\\GetAllBooks.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Book\\GetAllBooks.cshtml",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Book\\GetAllBooks.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Book\\GetAllBooks.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-13T06:22:31.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T10:18:25.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Controllers\\BookController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\BookController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T06:20:46.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Repository\\BookRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Repository\\BookRepository.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Repository\\BookRepository.cs",
+              "RelativeToolTip": "WebApplication1\\Repository\\BookRepository.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAUwFUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T06:55:36.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "BookModelcs.cs",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\BookModelcs.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Models\\BookModelcs.cs",
               "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\BookModelcs.cs",
               "RelativeToolTip": "WebApplication1\\Models\\BookModelcs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T09:21:17.346Z",
+              "WhenOpened": "2024-09-13T06:54:12.288Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "WebApplication1\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-11T10:22:36.401Z"
             }
           ]
         }

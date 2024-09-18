@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\images\\books\\book1.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\book1.jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\images\\books\\book2.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\book2.jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\images\\books\\book3.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\book3.jpg"
+    },
+    {
       "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\images\\cgg.gif",
       "PackagePath": "staticwebassets\\images\\cgg.gif"
     },

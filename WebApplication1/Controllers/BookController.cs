@@ -24,13 +24,14 @@ namespace WebApplication1.Controllers
             //return "All books";
             //return _bookRepository.GetAllBooks();
             var books = _bookRepository.GetAllBooks();
-            return View();
+            return View(books);
         }
 
-        public BookModelcs GetBook(int id)
+        public IActionResult GetBook(int id,string nameOfBook)
         {
             //return $"book with id = {id}";
-            return _bookRepository.GetBookById(id);
+            var book= _bookRepository.GetBookById(id);
+            return View(book);
         }
 
         public List<BookModelcs> SearchBooks(string bookName,string authorName)
