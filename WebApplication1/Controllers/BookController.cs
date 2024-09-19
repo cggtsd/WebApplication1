@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Dynamic;
 using WebApplication1.Models;
 using WebApplication1.Repository;
 
@@ -26,12 +27,25 @@ namespace WebApplication1.Controllers
             var books = _bookRepository.GetAllBooks();
             return View(books);
         }
-
-        public IActionResult GetBook(int id,string nameOfBook)
+        [Route("book-details/{id}",Name ="bookDetailRoute")]
+        public IActionResult GetBook(int id)
         {
             //return $"book with id = {id}";
-            var book= _bookRepository.GetBookById(id);
-            return View(book);
+            dynamic data = new ExpandoObject();
+            data.book= _bookRepository.GetBookById(id);
+            data.Name = "Fathima";
+            //var book= 
+            return View(data);
+        }
+
+        public IActionResult AddNewBook()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult AddNewBook(BookModelcs bookModel)
+        {
+            return View();
         }
 
         public List<BookModelcs> SearchBooks(string bookName,string authorName)

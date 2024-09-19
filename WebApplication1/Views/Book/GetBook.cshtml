@@ -1,10 +1,10 @@
-﻿@model BookModelcs
+﻿@* @model BookModelcs *@
 @{
-    ViewData["Title"] = "GetBook "+Model.Title;
+    ViewData["Title"] = "GetBook "+Model.book.Title;
 }
 
 <div class="container">
-    <h3 class="display-4">Book Details</h3>
+    <h3 class="display-4">Book Details @Model.Name</h3>
     <div class="row">
         <div class="col-md-6">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -38,23 +38,23 @@
         <div class="col-md-6">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>@Model.Title</h1>
+                    <h1>@Model.book.Title</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 text-primary">
                     <span class="col-form-label label-primary">By: </span>
-                    <span class="font-monospace">@Model.Author</span>
+                    <span class="font-monospace">@Model.book.Author</span>
                 </div>
 
             </div>
             <div class="row">
                <div class="col-md-12">
                    <p class="description">
-                       This book will cover all details about @Model.Title.
+                       This book will cover all details about @Model.book.Title.
                        This book is designed especially for beginners to pro knowlegde.
                        After reading this book you will be able to dvelop fully functional application
-                       using asp.net core MVC @Model.Description
+                       using asp.net core MVC @Model.book.Description
                    </p>
                </div>
             </div>
@@ -66,14 +66,14 @@
             </div>
             <hr/>
             <ul class="list-group">
-                <li class="list-group-item"><span class="fw-bold">Category - </span>@Model.Category</li>
-                <li class="list-group-item"><span class="fw-bold">Total pages - </span>@Model.TotalPages</li>
-                <li class="list-group-item"><span class="fw-bold">Language - </span>@Model.Language</li>
+                <li class="list-group-item"><span class="fw-bold">Category - </span>@Model.book.Category</li>
+                <li class="list-group-item"><span class="fw-bold">Total pages - </span>@Model.book.TotalPages</li>
+                <li class="list-group-item"><span class="fw-bold">Language - </span>@Model.book.Language</li>
             </ul>
         </div>
     </div>
     <hr/>
-    <div class="py-5 bg-light">
+    <div class="py-5 bg-light" id="similarBooks">
         <h3 class="h3">Similar Books</h3>
         <div class="row">
            @for (int i = 0; i < 5; i++)

@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <Folder Include="MyStaticFiles\" />
-    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
 </Project>

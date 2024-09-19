@@ -25,8 +25,16 @@
       "PackagePath": "staticwebassets\\images\\books\\book3.jpg"
     },
     {
-      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\images\\cgg.gif",
-      "PackagePath": "staticwebassets\\images\\cgg.gif"
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\images\\logo.gif",
+      "PackagePath": "staticwebassets\\images\\logo.gif"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\images\\logo1.png",
+      "PackagePath": "staticwebassets\\images\\logo1.png"
     },
     {
       "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",
