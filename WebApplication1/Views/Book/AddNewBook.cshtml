@@ -6,25 +6,55 @@
 
 <div class="container">
     <h3 class="display-4">Add new book</h3>
-    <form method="post" >
+    @if (ViewBag.IsSuccess==true)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Congratulations!</strong> You added new book successfully.<br/>
+            Click <a asp-controller="book" asp-action="getbook" asp-route-id="@ViewBag.BookId">here</a> to view the details
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    
+    <form method="post" >@* 
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div> *@
+
+        @* <div class="mb-3">
+            <label asp-for="MyField" class="form-label"></label>
+            <input asp-for="MyField" class="form-control" />
+            <span asp-validation-for="MyField" class="text-danger"></span>
+        </div> *@
+       @*  <div class="mb-3">
+            <label asp-for="Language" class="form-label"></label>
+            <select asp-for="Language" class="form-control" required>
+                <option value="">Please choose book language</option>
+                <option>English</option>
+                <option>Urdu</option>
+                <option>Telugu</option>
+            </select>
+            <span asp-validation-for="Language" class="text-danger"></span>
+        </div> *@
         <div class="mb-3">
             <label asp-for="Title" class="form-label"></label>
             <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
         </div>
 
         <div class="mb-3">
             <label asp-for="Author" class="form-label"></label>
             <input asp-for="Author" class="form-control" />
+            <span asp-validation-for="Author" class="text-danger"></span>
         </div>
 
         <div class="mb-3">
             <label asp-for="Description" class="form-label"></label>
             <textarea asp-for="Description" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
         </div>
 
         <div class="mb-3">
             <label asp-for="TotalPages" class="form-label"></label>
             <input asp-for="TotalPages" class="form-control" />
+            <span asp-validation-for="TotalPages" class="text-danger"></span>
         </div>
 
         <button type="submit" class="btn btn-primary">Add Book</button>

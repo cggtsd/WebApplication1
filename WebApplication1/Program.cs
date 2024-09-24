@@ -1,4 +1,7 @@
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
+using WebApplication1.Data;
+using WebApplication1.Repository;
 
 namespace WebApplication1
 {
@@ -9,10 +12,12 @@ namespace WebApplication1
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddDbContext<BookStoreContext>(options=>options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=BookStore;Integrated Security=true;"));
             builder.Services.AddControllersWithViews();
 #if DEBUG
             builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 #endif
+            builder.Services.AddScoped<BookRepository,BookRepository>();
 
             var app = builder.Build();
 
