@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewData["Title"] = "AddNewBook";
+    var selectedVal = "Urdu";
 }
 @model BookModelcs
 
@@ -15,24 +16,27 @@
         </div>
     }
     
-    <form method="post" >@* 
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div> *@
+    <form method="post">
+        <div asp-validation-summary="None" class="text-danger"></div>
 
-        @* <div class="mb-3">
+        <div class="mb-3">
             <label asp-for="MyField" class="form-label"></label>
             <input asp-for="MyField" class="form-control" />
             <span asp-validation-for="MyField" class="text-danger"></span>
-        </div> *@
-       @*  <div class="mb-3">
+        </div>
+        <div class="mb-3">
             <label asp-for="Language" class="form-label"></label>
-            <select asp-for="Language" class="form-control" required>
+            @* <select asp-for="Language" class="form-control">
                 <option value="">Please choose book language</option>
-                <option>English</option>
-                <option>Urdu</option>
-                <option>Telugu</option>
-            </select>
+                <option value="English">English- Global Language</option>
+                <option value="Urdu">Urdu- Regional Language</option>
+                <option value="Telugu">Telugu- Regional Langauge</option>
+            </select> *@
+        <select asp-for="Language" class="form-control" asp-items="ViewBag.Language">
+                <option value="">Please choose book language</option>
+        </select>
             <span asp-validation-for="Language" class="text-danger"></span>
-        </div> *@
+        </div>
         <div class="mb-3">
             <label asp-for="Title" class="form-label"></label>
             <input asp-for="Title" class="form-control" />

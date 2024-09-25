@@ -18,8 +18,8 @@ namespace WebApplication1.Repository
                 Description = book.Description,
                 Title = book.Title,
                 Language = book.Language,
-                //TotalPages = (int)(book.TotalPages.HasValue?book.TotalPages:0),
-                TotalPages=book.TotalPages,
+                TotalPages = (int)(book.TotalPages.HasValue?book.TotalPages.Value:0),
+               
                 UpdatedOn = DateTime.UtcNow
             };
            await _context.Books.AddAsync(newBook);
