@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
 
 namespace WebApplication1.Data
 {
@@ -10,6 +11,7 @@ namespace WebApplication1.Data
         }
 
         public DbSet<Books> Books { get; set; }
+        public DbSet<Language> Language { get; set; }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{

@@ -1,4 +1,4 @@
-﻿
+﻿@using WebApplication1.Enums
 @{
     ViewData["Title"] = "AddNewBook";
     var selectedVal = "Urdu";
@@ -25,18 +25,32 @@
             <span asp-validation-for="MyField" class="text-danger"></span>
         </div>
         <div class="mb-3">
-            <label asp-for="Language" class="form-label"></label>
+            <label asp-for="LanguageId" class="form-label"></label>
             @* <select asp-for="Language" class="form-control">
                 <option value="">Please choose book language</option>
                 <option value="English">English- Global Language</option>
                 <option value="Urdu">Urdu- Regional Language</option>
                 <option value="Telugu">Telugu- Regional Langauge</option>
             </select> *@
-        <select asp-for="Language" class="form-control" asp-items="ViewBag.Language">
+        <select asp-for="LanguageId" class="form-control" asp-items="ViewBag.Language">
                 <option value="">Please choose book language</option>
         </select>
-            <span asp-validation-for="Language" class="text-danger"></span>
+            <span asp-validation-for="LanguageId" class="text-danger"></span>
         </div>
+       @*  <div class="mb-3">
+            <label asp-for="MultiLanguage" class="form-label"></label>
+            <select asp-for="MultiLanguage" class="form-control" asp-items="ViewBag.Language" multiple>
+                <option value="">Please choose book language</option>
+            </select>
+            <span asp-validation-for="MultiLanguage" class="text-danger"></span>
+        </div> *@
+        @*  <div class="mb-3">
+        <label asp-for="LanguageEnum" class="form-label"></label>
+        <select asp-for="LanguageEnum" class="form-control" asp-items="Html.GetEnumSelectList<LanguageEnum>()">
+        <option value="">Please choose book language</option>
+        </select>
+        <span asp-validation-for="LanguageEnum" class="text-danger"></span>
+        </div> *@
         <div class="mb-3">
             <label asp-for="Title" class="form-label"></label>
             <input asp-for="Title" class="form-control" />

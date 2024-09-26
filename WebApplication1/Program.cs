@@ -18,6 +18,7 @@ namespace WebApplication1
             builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 #endif
             builder.Services.AddScoped<BookRepository,BookRepository>();
+            builder.Services.AddScoped<LanguageRepository,LanguageRepository>();
 
             var app = builder.Build();
 
