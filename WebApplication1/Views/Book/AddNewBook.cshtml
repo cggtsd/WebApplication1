@@ -16,7 +16,7 @@
         </div>
     }
     
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
         <div asp-validation-summary="None" class="text-danger"></div>
 
         <div class="mb-3">
@@ -74,6 +74,22 @@
             <input asp-for="TotalPages" class="form-control" />
             <span asp-validation-for="TotalPages" class="text-danger"></span>
         </div>
+
+        <div class="mb-3">
+            <label asp-for="CoverPhoto" class="form-label"></label>
+            <input class="form-control" asp-for="CoverPhoto" id="formFile">
+            <span asp-validation-for="CoverPhoto" class="text-danger"></span>
+        </div>
+       @*  <div class="mb-3">
+            <label asp-for="GalleryFiles" class="form-label"></label>
+            <input class="form-control" asp-for="GalleryFiles" id="formFile">
+            <span asp-validation-for="GalleryFiles" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="BookPdf" class="form-label"></label>
+            <input class="form-control" asp-for="BookPdf" id="formFile">
+            <span asp-validation-for="BookPdf" class="text-danger"></span>
+        </div> *@
 
         <button type="submit" class="btn btn-primary">Add Book</button>
     </form>

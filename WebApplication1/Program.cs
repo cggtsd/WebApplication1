@@ -16,6 +16,7 @@ namespace WebApplication1
             builder.Services.AddControllersWithViews();
 #if DEBUG
             builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+                //.AddViewOptions(options=>options.HtmlHelperOptions.ClientValidationEnabled=false);
 #endif
             builder.Services.AddScoped<BookRepository,BookRepository>();
             builder.Services.AddScoped<LanguageRepository,LanguageRepository>();

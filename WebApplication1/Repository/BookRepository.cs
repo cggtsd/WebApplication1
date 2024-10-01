@@ -20,41 +20,83 @@ namespace WebApplication1.Repository
                 LanguageId = book.LanguageId,
                 TotalPages = (int)(book.TotalPages ?? 0),
                
-                UpdatedOn = DateTime.UtcNow
+                UpdatedOn = DateTime.UtcNow,
+                CoverImageUrl= book.CoverImageUrl,
+                //BookPdfUrl= book.BookPdfUrl,
             };
+           
+            //newBook.bookGallery=new List<BookGallery>();
+            //foreach (var file in book.Gallery)
+            //{
+            //    newBook.bookGallery.Add(new BookGallery()
+            //    {
+            //       Name = file.Name,
+            //       URL = file.Url,
+            //    });
+            //}
            await _context.Books.AddAsync(newBook);
             await _context.SaveChangesAsync();
             return newBook.Id;
         }
         public async Task<List<BookModelcs>> GetAllBooks()
         {
-            var books = new List<BookModelcs>();
-            var allbooks = await _context.Books.ToListAsync();
-            if (allbooks?.Any() == true)
-            {
-                foreach (var book in allbooks)
-                {
-                    books.Add(new BookModelcs()
-                    {
-                        Author = book.Author,
-                        Title = book.Title,
-                        TotalPages = book.TotalPages,
-                        Category = book.Category,
-                        Description = book.Description,
-                        Id = book.Id,
-                        LanguageId = book.LanguageId,
-                        //Language= book.Language.Name
-                    }
-                        );
+            //var books = new List<BookModelcs>();
+            //var allbooks = await _context.Books.ToListAsync();
+            //if (allbooks?.Any() == true)
+            //{
+            //    foreach (var book in allbooks)
+            //    {
+            //        books.Add(new BookModelcs()
+            //        {
+            //            Author = book.Author,
+            //            Title = book.Title,
+            //            TotalPages = book.TotalPages,
+            //            Category = book.Category,
+            //            Description = book.Description,
+            //            Id = book.Id,
+            //            LanguageId = book.LanguageId,
+            //           Language=book.Language.Name,
+            //           CoverImageUrl = book.CoverImageUrl,
 
 
-                }
-            }
+            //        }
+            //            );
 
-            return books;
+
+            //    }
+            //}
+
+            //return books;
             //return DataSource();
+            return await _context.Books.Select(x => new BookModelcs()
+            {
+                Author = x.Author,
+                Title = x.Title,
+                TotalPages = x.TotalPages,
+                Category = x.Category,
+                Description = x.Description,
+                Id = x.Id,
+                Language = x.Language.Name,
+                CoverImageUrl = x.CoverImageUrl,
+
+            }).ToListAsync();
         }
-        public async Task<BookModelcs> GetBookById(int id)
+        public async Task<List<BookModelcs>> GetTopBooksAsync()
+        {
+            return await _context.Books.Select(x => new BookModelcs()
+            {
+                Author = x.Author,
+                Title = x.Title,
+                TotalPages = x.TotalPages,
+                Category = x.Category,
+                Description = x.Description,
+                Id = x.Id,
+                Language = x.Language.Name,
+                CoverImageUrl = x.CoverImageUrl,
+
+            }).Take(5).ToListAsync();
+        }
+            public async Task<BookModelcs> GetBookById(int id)
         {
             //var book = await _context.Books.FindAsync(id);
             return await _context.Books.Where(x => x.Id == id).Select(x => new BookModelcs()
@@ -65,7 +107,16 @@ namespace WebApplication1.Repository
                 Category = x.Category,
                 Description = x.Description,
                 Id = x.Id,
-                Language = x.Language.Name
+                Language = x.Language.Name,
+                CoverImageUrl = x.CoverImageUrl,
+                //BookPdfUrl = x.BookPdfUrl,
+                //Gallery = x.bookGallery.Select(g => new GalleryModel()
+                //{
+                //    Id = g.Id,
+                //    Name = g.Name,
+                //    Url=g.URL
+                //}).ToList(),
+                
 
 
             }).FirstOrDefaultAsync()??new BookModelcs();
