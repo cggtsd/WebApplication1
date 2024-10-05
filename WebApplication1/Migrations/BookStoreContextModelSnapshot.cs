@@ -30,10 +30,7 @@ namespace WebApplication1.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("BookId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("BooksId")
+                    b.Property<int?>("BookId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -44,7 +41,7 @@ namespace WebApplication1.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BooksId");
+                    b.HasIndex("BookId");
 
                     b.ToTable("BookGallery");
                 });
@@ -115,9 +112,11 @@ namespace WebApplication1.Migrations
 
             modelBuilder.Entity("WebApplication1.Data.BookGallery", b =>
                 {
-                    b.HasOne("WebApplication1.Data.Books", null)
+                    b.HasOne("WebApplication1.Data.Books", "Book")
                         .WithMany("bookGallery")
-                        .HasForeignKey("BooksId");
+                        .HasForeignKey("BookId");
+
+                    b.Navigation("Book");
                 });
 
             modelBuilder.Entity("WebApplication1.Data.Books", b =>

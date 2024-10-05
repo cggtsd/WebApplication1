@@ -4,9 +4,12 @@ namespace WebApplication1.Helpers
 {
     public class MyCustomValidationAttribute : ValidationAttribute
     {
-     
+       
 
-        public string Text { get; set; }
+        public string? Text { get; set; }
+        public MyCustomValidationAttribute(string text) {
+            Text = text;
+        }
       
         protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
         {

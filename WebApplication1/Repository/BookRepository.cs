@@ -22,19 +22,19 @@ namespace WebApplication1.Repository
                
                 UpdatedOn = DateTime.UtcNow,
                 CoverImageUrl= book.CoverImageUrl,
-                //BookPdfUrl= book.BookPdfUrl,
+                BookPdfUrl= book.BookPdfUrl,
             };
-           
-            //newBook.bookGallery=new List<BookGallery>();
-            //foreach (var file in book.Gallery)
-            //{
-            //    newBook.bookGallery.Add(new BookGallery()
-            //    {
-            //       Name = file.Name,
-            //       URL = file.Url,
-            //    });
-            //}
-           await _context.Books.AddAsync(newBook);
+
+            newBook.bookGallery = new List<BookGallery>();
+            foreach (var file in book.Gallery)
+            {
+                newBook.bookGallery.Add(new BookGallery()
+                {
+                    Name = file.Name,
+                    URL = file.URL,
+                });
+            }
+            await _context.Books.AddAsync(newBook);
             await _context.SaveChangesAsync();
             return newBook.Id;
         }
@@ -109,14 +109,14 @@ namespace WebApplication1.Repository
                 Id = x.Id,
                 Language = x.Language.Name,
                 CoverImageUrl = x.CoverImageUrl,
-                //BookPdfUrl = x.BookPdfUrl,
-                //Gallery = x.bookGallery.Select(g => new GalleryModel()
-                //{
-                //    Id = g.Id,
-                //    Name = g.Name,
-                //    Url=g.URL
-                //}).ToList(),
-                
+                BookPdfUrl = x.BookPdfUrl,
+                Gallery = x.bookGallery.Select(g => new GalleryModel()
+                {
+                    Id = g.Id,
+                    Name = g.Name,
+                    URL = g.URL
+                }).ToList(),
+
 
 
             }).FirstOrDefaultAsync()??new BookModelcs();

@@ -3,7 +3,7 @@
     // int x = 12;
     // dynamic data = ViewBag.Data;
     // var bookInfo = ViewData["book"] as BookModelcs;
-    var book = ViewData["Book"] as BookModelcs;
+    // var book = ViewData["Book"] as BookModelcs;
 }
 
 @* <div class="text-center">
@@ -97,14 +97,20 @@
 </section>
 <div class="py-5 bg-light">
     <div class="container">
-        @* <h3 class="h3">Top Books</h3> *@
-        <big>Top Books</big>
-        <p big>Top Books using Attributes</p>
+        <h3 class="h3">Top Books</h3>
+        @* <big>Top Books</big>
+        <p big>Top Books using Attributes</p> *@
         @* @await Component.InvokeAsync("TopBooks") *@
         @* <vc:top-books></vc:top-books> *@
       <div class="row">
          <div class="col-md-4">
-             <div class="card mb-4 shadow-sm">
+             @* <partial name="_bookThumbnail"></partial> *@
+              @* <partial name="_bookThumbnail" model="new BookModelcs()"></partial> *@
+                @{
+                    // Html.RenderPartial("_bookThumbnail", new BookModelcs());
+                await Html.RenderPartialAsync("_bookThumbnail", new BookModelcs());
+                }
+            @*  <div class="card mb-4 shadow-sm">
                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"></svg>
                  <div class="card-body">
                      <p class="card-text"> This section will be used to display short description of book</p>
@@ -116,10 +122,13 @@
 
                      </div>
                  </div>
-             </div>
+             </div> *@
          </div>
          <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
+                @* <partial name="_bookThumbnail"></partial> *@
+                @* <partial name="_bookThumbnail" model="new BookModelcs()"></partial> *@
+                @Html.Partial("_bookThumbnail",new BookModelcs())
+                @* <div class="card mb-4 shadow-sm">
                     <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"></svg>
                     <div class="card-body">
                         <p class="card-text"> This section will be used to display short description of book</p>
@@ -131,10 +140,13 @@
 
                         </div>
                     </div>
-                </div>
+                </div> *@
          </div>
          <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
+                @* <partial name="_bookThumbnail"></partial> *@
+                @* <partial name="_bookThumbnail" model="new BookModelcs()"></partial> *@
+                @await Html.PartialAsync("_bookThumbnail", new BookModelcs())
+               @*  <div class="card mb-4 shadow-sm">
                     <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"></svg>
                     <div class="card-body">
                         <p class="card-text"> This section will be used to display short description of book</p>
@@ -146,7 +158,7 @@
 
                         </div>
                     </div>
-                </div>
+                </div> *@
          </div>
       </div>
 

@@ -5,6 +5,114 @@
       "PackagePath": "staticwebassets\\WebApplication1.bundle.scp.css"
     },
     {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\cover\\0834537d-df9e-49a0-92a6-738e6f4928c0_book (16).jpg",
+      "PackagePath": "staticwebassets\\books\\cover\\0834537d-df9e-49a0-92a6-738e6f4928c0_book (16).jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\cover\\1ff86e89-00a4-40c6-828d-7e11556f4a79_book5.jpg",
+      "PackagePath": "staticwebassets\\books\\cover\\1ff86e89-00a4-40c6-828d-7e11556f4a79_book5.jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\cover\\4046d208-9eac-4bfc-9713-f664aa234be8_book (23).jpg",
+      "PackagePath": "staticwebassets\\books\\cover\\4046d208-9eac-4bfc-9713-f664aa234be8_book (23).jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\cover\\89a3781d-226f-41dc-840f-1cf3b8c48096_book1.jpg",
+      "PackagePath": "staticwebassets\\books\\cover\\89a3781d-226f-41dc-840f-1cf3b8c48096_book1.jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\cover\\b53292eb-9538-451d-b497-c9e6cdb7482d_book3.jpg",
+      "PackagePath": "staticwebassets\\books\\cover\\b53292eb-9538-451d-b497-c9e6cdb7482d_book3.jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\cover\\c5c4615f-de8f-4e8d-b9b6-027a457c7715_book2.jpg",
+      "PackagePath": "staticwebassets\\books\\cover\\c5c4615f-de8f-4e8d-b9b6-027a457c7715_book2.jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\cover\\f26f651f-526c-4299-9b6b-5af252c17b81_book (23).jpg",
+      "PackagePath": "staticwebassets\\books\\cover\\f26f651f-526c-4299-9b6b-5af252c17b81_book (23).jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\gallery555218b3-0e7a-47cf-8590-a48ac9ea97b6_book (16).jpg",
+      "PackagePath": "staticwebassets\\books\\gallery555218b3-0e7a-47cf-8590-a48ac9ea97b6_book (16).jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\gallery793ca583-a627-4cf9-992a-34341e8f64f0_book (7).jpg",
+      "PackagePath": "staticwebassets\\books\\gallery793ca583-a627-4cf9-992a-34341e8f64f0_book (7).jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\gallery\\05493116-b630-47ba-a2d1-a90d16a1ef1e_book (9).jpg",
+      "PackagePath": "staticwebassets\\books\\gallery\\05493116-b630-47ba-a2d1-a90d16a1ef1e_book (9).jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\gallery\\0ee6ee3b-96cd-4743-af18-87c9e6035594_book1.jpg",
+      "PackagePath": "staticwebassets\\books\\gallery\\0ee6ee3b-96cd-4743-af18-87c9e6035594_book1.jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\gallery\\0f1c726d-df91-4350-aebc-7346e982514c_book (16).jpg",
+      "PackagePath": "staticwebassets\\books\\gallery\\0f1c726d-df91-4350-aebc-7346e982514c_book (16).jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\gallery\\15935fac-b789-423f-bd2d-caa6500e2554_book5.jpg",
+      "PackagePath": "staticwebassets\\books\\gallery\\15935fac-b789-423f-bd2d-caa6500e2554_book5.jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\gallery\\3500525b-e374-4878-b836-68be86ecb247_book5.jpg",
+      "PackagePath": "staticwebassets\\books\\gallery\\3500525b-e374-4878-b836-68be86ecb247_book5.jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\gallery\\64e89c79-ca8a-4a20-9845-ff71db23cea8_book (13).jpg",
+      "PackagePath": "staticwebassets\\books\\gallery\\64e89c79-ca8a-4a20-9845-ff71db23cea8_book (13).jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\gallery\\a32adba5-23a4-4cd2-b7c0-14cd2a626b01_book1.jpg",
+      "PackagePath": "staticwebassets\\books\\gallery\\a32adba5-23a4-4cd2-b7c0-14cd2a626b01_book1.jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\gallery\\cf58eb7a-c10b-46ee-b0f4-0479f8a5a1c6_book (7).jpg",
+      "PackagePath": "staticwebassets\\books\\gallery\\cf58eb7a-c10b-46ee-b0f4-0479f8a5a1c6_book (7).jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\gallery\\df89dcd3-4430-4f8f-9cfa-8cfb25898ba4_book2.jpg",
+      "PackagePath": "staticwebassets\\books\\gallery\\df89dcd3-4430-4f8f-9cfa-8cfb25898ba4_book2.jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\gallery\\f12a2c76-e3c4-40b6-9c5b-cdc909f371fc_book3.jpg",
+      "PackagePath": "staticwebassets\\books\\gallery\\f12a2c76-e3c4-40b6-9c5b-cdc909f371fc_book3.jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\galleryaad1ec7a-c2a0-47d6-bded-decb29eba923_book (9).jpg",
+      "PackagePath": "staticwebassets\\books\\galleryaad1ec7a-c2a0-47d6-bded-decb29eba923_book (9).jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\galleryc09f01d3-efa3-43cc-b032-483c894959b5_noimage.png",
+      "PackagePath": "staticwebassets\\books\\galleryc09f01d3-efa3-43cc-b032-483c894959b5_noimage.png"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\galleryca7e2197-2b6b-41a0-b1f8-95327e88df85_book (8).jpg",
+      "PackagePath": "staticwebassets\\books\\galleryca7e2197-2b6b-41a0-b1f8-95327e88df85_book (8).jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\galleryd0ffea5d-a0f5-4b85-ad70-238e418ffc94_book (23).jpg",
+      "PackagePath": "staticwebassets\\books\\galleryd0ffea5d-a0f5-4b85-ad70-238e418ffc94_book (23).jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\galleryf5f8815b-864a-4644-8f92-05ad88e8fad0_book (5).jpg",
+      "PackagePath": "staticwebassets\\books\\galleryf5f8815b-864a-4644-8f92-05ad88e8fad0_book (5).jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\galleryf6e69594-e64f-44c4-8e57-981bd252250a_book (6).jpg",
+      "PackagePath": "staticwebassets\\books\\galleryf6e69594-e64f-44c4-8e57-981bd252250a_book (6).jpg"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\pdf\\35b060b0-20ce-4d9b-a2cd-0c8200e1e9f5_dummy.pdf",
+      "PackagePath": "staticwebassets\\books\\pdf\\35b060b0-20ce-4d9b-a2cd-0c8200e1e9f5_dummy.pdf"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\books\\pdf\\9e67f1e4-14dd-46b4-87d3-10c9f63dfcf2_dummy.pdf",
+      "PackagePath": "staticwebassets\\books\\pdf\\9e67f1e4-14dd-46b4-87d3-10c9f63dfcf2_dummy.pdf"
+    },
+    {
       "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -35,6 +143,10 @@
     {
       "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\images\\logo1.png",
       "PackagePath": "staticwebassets\\images\\logo1.png"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\images\\noimage.png",
+      "PackagePath": "staticwebassets\\images\\noimage.png"
     },
     {
       "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\jquery-ajax-unobtrusive\\jquery.unobtrusive-ajax.js",

@@ -5,7 +5,7 @@ namespace WebApplication1.Components
 {
     public class TopBooksViewComponent(BookRepository bookRepository) : ViewComponent
     {
-        private readonly BookRepository _bookRepository = bookRepository;
+        //private readonly BookRepository _bookRepository = bookRepository;
         public async Task<IViewComponentResult> InvokeAsync()
         {
             //var books = await _bookRepository.GetTopBooksAsync();

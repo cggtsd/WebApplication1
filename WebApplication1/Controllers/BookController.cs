@@ -85,31 +85,31 @@ namespace WebApplication1.Controllers
             {
                 if (bookModel.CoverPhoto != null)
                 {
-                    string folder = "/books/cover/";
+                    string folder = "books/cover/";
                     bookModel.CoverImageUrl=await UploadImage(folder, bookModel.CoverPhoto);
-                } 
-                //if (bookModel.GalleryFiles != null)
-                //{
-                //    string folder = "/books/gallery";
-                //    bookModel.Gallery = [];
-                //    foreach (var file in bookModel.GalleryFiles)
-                //    {
-                //        var gallery = new GalleryModel()
-                //        {
-                //            Name=file.FileName,
-                //            Url= await UploadImage(folder, file)
+                }
+                if (bookModel.GalleryFiles != null)
+                {
+                    string folder = "books/gallery/";
+                    bookModel.Gallery = [];
+                    foreach (var file in bookModel.GalleryFiles)
+                    {
+                        var gallery = new GalleryModel()
+                        {
+                            Name = file.FileName,
+                            URL = await UploadImage(folder, file)
 
-                //        };
-                //      bookModel.Gallery.Add(gallery);  
-                         
-                //    }
-                   
-                //}
-                //if (bookModel.BookPdf != null)
-                //{
-                //    string folder = "/books/pdf";
-                //    bookModel.BookPdfUrl = await UploadImage(folder, bookModel.BookPdf);
-                //}
+                        };
+                        bookModel.Gallery.Add(gallery);
+
+                    }
+
+                    }
+                if (bookModel.BookPdf != null)
+                {
+                    string folder = "books/pdf/";
+                    bookModel.BookPdfUrl = await UploadImage(folder, bookModel.BookPdf);
+                }
                 //_bookRepository.AddNewBook(bookModel);
                 int id = await _bookRepository.AddNewBook(bookModel);
 
@@ -160,8 +160,8 @@ namespace WebApplication1.Controllers
             
             folderPath += Guid.NewGuid().ToString() + "_" + file.FileName;
           
-            //string serverFolder = Path.Combine(_webHostEnvironment.WebRootPath, folderPath);
-            await file.CopyToAsync(new FileStream(Path.Combine(_webHostEnvironment.WebRootPath, folderPath), FileMode.Create));
+            string serverFolder = Path.Combine(_webHostEnvironment.WebRootPath, folderPath);
+            await file.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
             return "/"+folderPath;
         }
 

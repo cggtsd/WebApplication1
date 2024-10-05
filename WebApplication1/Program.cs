@@ -1,25 +1,32 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 using WebApplication1.Data;
+using WebApplication1.Models;
 using WebApplication1.Repository;
 
 namespace WebApplication1
 {
     public class Program
     {
+        
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            IConfiguration configuration = builder.Configuration;
 
             // Add services to the container.
-            builder.Services.AddDbContext<BookStoreContext>(options=>options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=BookStore;Integrated Security=true;"));
+            builder.Services.AddDbContext<BookStoreContext>(options =>options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=BookStore;Integrated Security=true;"));
+            //builder.Services.AddDbContext<BookStoreContext>(options =>options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
             builder.Services.AddControllersWithViews();
 #if DEBUG
-            builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
-                //.AddViewOptions(options=>options.HtmlHelperOptions.ClientValidationEnabled=false);
+            builder.Services.AddRazorPages().AddRazorRuntimeCompilation()
+                .AddViewOptions(static options => options.HtmlHelperOptions.ClientValidationEnabled = false);
 #endif
             builder.Services.AddScoped<BookRepository,BookRepository>();
             builder.Services.AddScoped<LanguageRepository,LanguageRepository>();
+            builder.Services.AddSingleton<IMessageRepository,MessageRepository>();
+
+            builder.Services.Configure<NewBookAlertConfig>(configuration.GetSection("NewBookAlert"));
 
             var app = builder.Build();
 
