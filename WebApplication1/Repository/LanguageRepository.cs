@@ -4,16 +4,16 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Repository
 {
-    public class LanguageRepository(BookStoreContext context)
+    public class LanguageRepository(BookStoreContext context) : ILanguageRepository
     {
-        private readonly BookStoreContext _context=context;
+        private readonly BookStoreContext _context = context;
 
 
         public async Task<List<LanguageModel>> GetLanguages()
         {
-            return await  _context.Language.Select(x => new LanguageModel()
+            return await _context.Language.Select(x => new LanguageModel()
             {
-                Id= x.Id,
+                Id = x.Id,
                 Name = x.Name,
                 Description = x.Description,
             }).ToListAsync();

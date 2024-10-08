@@ -133,6 +133,10 @@
       "PackagePath": "staticwebassets\\images\\books\\book3.jpg"
     },
     {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\images\\login.png",
+      "PackagePath": "staticwebassets\\images\\login.png"
+    },
+    {
       "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\images\\logo.gif",
       "PackagePath": "staticwebassets\\images\\logo.gif"
     },
@@ -147,6 +151,10 @@
     {
       "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\images\\noimage.png",
       "PackagePath": "staticwebassets\\images\\noimage.png"
+    },
+    {
+      "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\images\\signup.png",
+      "PackagePath": "staticwebassets\\images\\signup.png"
     },
     {
       "Id": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\jquery-ajax-unobtrusive\\jquery.unobtrusive-ajax.js",

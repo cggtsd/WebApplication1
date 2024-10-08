@@ -4,10 +4,11 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Repository
 {
-    public class BookRepository(BookStoreContext context)
+    public class BookRepository(BookStoreContext context,IConfiguration configuration) : IBookRepository
     {
 
         private readonly BookStoreContext _context = context;
+        private readonly IConfiguration _configuration = configuration;
 
         public async Task<int> AddNewBook(BookModelcs book)
         {
@@ -19,10 +20,10 @@ namespace WebApplication1.Repository
                 Title = book.Title,
                 LanguageId = book.LanguageId,
                 TotalPages = (int)(book.TotalPages ?? 0),
-               
+
                 UpdatedOn = DateTime.UtcNow,
-                CoverImageUrl= book.CoverImageUrl,
-                BookPdfUrl= book.BookPdfUrl,
+                CoverImageUrl = book.CoverImageUrl,
+                BookPdfUrl = book.BookPdfUrl,
             };
 
             newBook.bookGallery = new List<BookGallery>();
@@ -81,7 +82,7 @@ namespace WebApplication1.Repository
 
             }).ToListAsync();
         }
-        public async Task<List<BookModelcs>> GetTopBooksAsync()
+        public async Task<List<BookModelcs>> GetTopBooksAsync(int count)
         {
             return await _context.Books.Select(x => new BookModelcs()
             {
@@ -94,9 +95,9 @@ namespace WebApplication1.Repository
                 Language = x.Language.Name,
                 CoverImageUrl = x.CoverImageUrl,
 
-            }).Take(5).ToListAsync();
+            }).Take(count).ToListAsync();
         }
-            public async Task<BookModelcs> GetBookById(int id)
+        public async Task<BookModelcs> GetBookById(int id)
         {
             //var book = await _context.Books.FindAsync(id);
             return await _context.Books.Where(x => x.Id == id).Select(x => new BookModelcs()
@@ -119,7 +120,7 @@ namespace WebApplication1.Repository
 
 
 
-            }).FirstOrDefaultAsync()??new BookModelcs();
+            }).FirstOrDefaultAsync() ?? new BookModelcs();
 
             //if (book != null)
             //{
@@ -218,5 +219,12 @@ namespace WebApplication1.Repository
 
         //    };
         //}
+
+        public string GetAppName()
+        {
+            return "Book Store Application";
+            //return _configuration["AppName"];
+        }
     }
+
 }

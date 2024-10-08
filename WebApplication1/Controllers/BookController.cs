@@ -7,17 +7,18 @@ using WebApplication1.Repository;
 
 namespace WebApplication1.Controllers
 {
-    public class BookController(BookRepository bookRepository, LanguageRepository languageRepository,IWebHostEnvironment webHostEnvironment) : Controller
+    [Route("[controller]/[action]")]
+    public class BookController(IBookRepository bookRepository, ILanguageRepository languageRepository,IWebHostEnvironment webHostEnvironment) : Controller
     {
-        private readonly BookRepository _bookRepository = bookRepository;
-        private readonly LanguageRepository _languageRepository = languageRepository;
+        private readonly IBookRepository _bookRepository = bookRepository;
+        private readonly ILanguageRepository _languageRepository = languageRepository;
         private readonly IWebHostEnvironment _webHostEnvironment=webHostEnvironment;
 
         //public IActionResult Index()
         //{
         //    return View();
         //}
-
+        [Route("~/all-books")]
         public async Task<IActionResult> GetAllBooks()
         {
             //return "All books";
@@ -25,7 +26,8 @@ namespace WebApplication1.Controllers
             var books = await _bookRepository.GetAllBooks();
             return View(books);
         }
-        [Route("book-details/{id}", Name = "bookDetailRoute")]
+        [Route("~/book-details/{id:int:min(1)}", Name = "bookDetailRoute")]
+        //[Route("~/book-details/{id}", Name = "bookDetailRoute")]
         public async Task<IActionResult> GetBook(int id)
         {
             //return $"book with id = {id}";
@@ -72,7 +74,7 @@ namespace WebApplication1.Controllers
             //    new(){Text="Hindi",Value="5",Group=group3},
             //    new(){Text="French",Value="6",Group=group3},
             //};
-            ViewBag.Language= new SelectList(await _languageRepository.GetLanguages(),"Id","Name");
+            //ViewBag.Language= new SelectList(await _languageRepository.GetLanguages(),"Id","Name");
             ViewBag.IsSuccess = isSuccess;
             ViewBag.BookId = bookId;
             return View(model);
@@ -149,7 +151,7 @@ namespace WebApplication1.Controllers
             //    new(){Text="Hindi",Value="5",Group=group3},
             //    new(){Text="French",Value="6",Group=group3},
             //};
-            ViewBag.Language= new SelectList(await _languageRepository.GetLanguages(),"Id","Name");
+            //ViewBag.Language= new SelectList(await _languageRepository.GetLanguages(),"Id","Name");
             ModelState.AddModelError("", "This is my custom error message");
             ModelState.AddModelError("", "This is my second custom error message");
             return View();

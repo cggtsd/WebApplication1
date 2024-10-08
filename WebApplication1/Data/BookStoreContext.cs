@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
 
 namespace WebApplication1.Data
 {
-    public class BookStoreContext:DbContext
+    public class BookStoreContext:IdentityDbContext
     {
         public BookStoreContext(DbContextOptions<BookStoreContext> options):base(options) 
         {

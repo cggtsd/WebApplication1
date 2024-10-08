@@ -7,6 +7,7 @@ using WebApplication1.Repository;
 
 namespace WebApplication1.Controllers
 {
+    [Route("[controller]/[action]")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -26,6 +27,8 @@ namespace WebApplication1.Controllers
         public BookModelcs Book { get; set; }
         [ViewData]
         public string Title { get; set; }
+        //[Route("")]
+        [Route("~/")]
 
         public IActionResult Index()
         {
@@ -68,17 +71,38 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
-
-        public IActionResult AboutUs()
+        //[Route("about-us/{id}/test/{name}")]
+        //[Route("about-us")]
+        //[HttpGet]
+        //[HttpGet("about-us")]
+        //[HttpGet("about-us",Name ="about-us",Order =1)]
+        [Route("~/about-us/{name:alpha:minlength(5)}")]
+        public IActionResult AboutUs(string name)
         {
             ViewData["Title"] = "AboutUs Page from Controller ";
             return View();
         }
+        //[Route("~/contact-us")]
+        [Route("~/contact-us", Name = "contact-us")]
         public IActionResult ContactUs()
         {
             return View();
         }
-
+        [Route("~/test/a{a}")]
+        public string Test(string a)
+        {
+            return a;
+        }
+        [Route("~/test/b{a}")]
+        public string Test1(string a)
+        {
+            return a;
+        }
+        [Route("~/test/c{a}")]
+        public string Test2(string a)
+        {
+            return a;
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

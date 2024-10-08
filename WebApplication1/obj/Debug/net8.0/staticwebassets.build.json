@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5oFHb2m0OnPN6o811ozzTIYUVHNNygXksmVY8W7LtwY=",
+  "Hash": "gteHEpBDCjBObE8PuPxrGY0a++qz5PsM7bt4eFdccKQ=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -663,6 +663,25 @@
       "OriginalItemSpec": "wwwroot\\images\\books\\book3.jpg"
     },
     {
+      "Identity": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\images\\login.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/login.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\login.png"
+    },
+    {
       "Identity": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\images\\logo.gif",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
@@ -737,6 +756,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\noimage.png"
+    },
+    {
+      "Identity": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\images\\signup.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/signup.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\signup.png"
     },
     {
       "Identity": "C:\\dotnet\\WebApplication1\\WebApplication1\\wwwroot\\jquery-ajax-unobtrusive\\jquery.unobtrusive-ajax.js",
