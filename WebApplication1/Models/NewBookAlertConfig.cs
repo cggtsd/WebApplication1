@@ -3,6 +3,6 @@
     public class NewBookAlertConfig
     {
         public bool DisplayNewBookAlert { get; set; }
-        public string BookNamw { get; set; }
+        public string BookName { get; set; }
     }
 }

@@ -13,12 +13,18 @@ namespace WebApplication1.Controllers
         private readonly ILogger<HomeController> _logger;
         //private readonly IConfiguration _configuration;
         private readonly NewBookAlertConfig _newBookAlertConfiguration;
+        private readonly NewBookAlertConfig _thirdPartyBookConfiguration;
         private readonly IMessageRepository _messageRepository
-;        public HomeController(ILogger<HomeController> logger,IOptions<NewBookAlertConfig> newBookAlertConfiguration,IMessageRepository messageRepository)
+;        public HomeController(ILogger<HomeController> logger,
+         IOptionsSnapshot<NewBookAlertConfig> newBookAlertConfiguration,
+       //IConfiguration configuration,
+       IMessageRepository messageRepository)
         {
             _logger = logger;
             //_configuration = configuration;
             _newBookAlertConfiguration = newBookAlertConfiguration.Value;
+            //_newBookAlertConfiguration = newBookAlertConfiguration.Get("InternalBook");
+            //_thirdPartyBookConfiguration = newBookAlertConfiguration.Get("ThirdPartyBook");
             _messageRepository = messageRepository;
         }
         [ViewData]
@@ -47,13 +53,14 @@ namespace WebApplication1.Controllers
             //CustomProperty = "Custom Value";
             Book = new BookModelcs() { Id = 14, Author = "Me" };
             Title = "Home Page";
+            //var result = _configuration["DisplayNewBookAlert"];
             //var _ = _configuration.GetValue<bool>("DisplayNewBookAlert");
             //var result = _configuration.GetValue<bool>("NewBookAlert:DisplayNewBookAlert");
-            //var bookName = _configuration.GetValue<bool>("NewBookAlert:DisplayNewBookAlert");
+            //var bookName = _configuration.GetValue<string>("NewBookAlert:BookName");
 
-            //var newBook= _configuration.GetSection("NewBookAlert");
+            //var newBook = _configuration.GetSection("NewBookAlert");
             //var result = newBook.GetValue<bool>("DisplayNewBookAlert");
-            //var bookName = newBook.GetValue<bool>("BookName");
+            //var bookName = newBook.GetValue<string>("BookName");
             //var result = _configuration["AppName"];
             //var key1 = _configuration["infoObj:key1"];
             //var key2 = _configuration["infoObj:key2"];
@@ -61,7 +68,9 @@ namespace WebApplication1.Controllers
             //var newBookAlert = new NewBookAlertConfig();
             //_configuration.Bind("NewBookAlert", newBookAlert);
             //bool isDisplay = newBookAlert.DisplayNewBookAlert;
-            bool isDisplay = _newBookAlertConfiguration.DisplayNewBookAlert;
+            //bool isDisplay = _newBookAlertConfiguration.DisplayNewBookAlert;
+            //bool isDisplay = _newBookAlertConfiguration.DisplayNewBookAlert;
+            //bool isDisplay1 = _thirdPartyConfiguration.DisplayNewBookAlert;
             var value = _messageRepository.GetName();
 
             return View();

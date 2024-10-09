@@ -14,11 +14,11 @@ namespace WebApplication1
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            IConfiguration configuration = builder.Configuration;
+            IConfiguration _configuration = builder.Configuration;
 
             // Add services to the container.
-            builder.Services.AddDbContext<BookStoreContext>(options =>options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=BookStore;Integrated Security=true;"));
-            //builder.Services.AddDbContext<BookStoreContext>(options =>options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            //builder.Services.AddDbContext<BookStoreContext>(options => options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=BookStore;Integrated Security=true;"));
+            builder.Services.AddDbContext<BookStoreContext>(options =>options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
             builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<BookStoreContext>();
             //builder.Services.Configure<IdentityOptions>(options =>
             //{
@@ -42,7 +42,9 @@ namespace WebApplication1
 
             builder.Services.AddSingleton<IMessageRepository,MessageRepository>();
 
-            builder.Services.Configure<NewBookAlertConfig>(configuration.GetSection("NewBookAlert"));
+            builder.Services.Configure<NewBookAlertConfig>(_configuration.GetSection("NewBookAlert"));
+            //builder.Services.Configure<NewBookAlertConfig>("InternalBook",_configuration.GetSection("ThirdPartyBook"));
+            //builder.Services.Configure<NewBookAlertConfig>("ThirdPartyBook",_configuration.GetSection("NewBookAlert"));
 
             var app = builder.Build();
 

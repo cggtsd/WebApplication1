@@ -1,8 +1,17 @@
-﻿
-@inject IBookRepository _bookRepo
-@* @inject IConfiguration _configuration *@
+﻿@using Microsoft.Extensions.Options
+@using Microsoft.Extensions.Configuration
+
+@* @inject IBookRepository _bookRepo *@
+@inject IConfiguration _configuration
+@inject IOptionsSnapshot<NewBookAlertConfig> _newBookAlertConfiguration
+@* @inject IOptionsSnapshot<NewBookAlertConfig> _newBookAlertConfiguration *@
 @{
     // var newBook = _configuration.GetSection("NewBookAlert");
+    // var newBook = new NewBookAlertConfig();
+    // _configuration.Bind("NewBookAlert", newBook);
+    var newBookAlertConfiguration = _newBookAlertConfiguration.Value;
+    // var newBookAlertConfiguration = _newBookAlertConfiguration.Get("InternalBook");
+    // var thirdPartyBookAlertConfiguration = _newBookAlertConfiguration.Get("ThirdPartyBook");
 }
 <header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
@@ -12,8 +21,8 @@
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                 <img src="~/images/logo.png" width="30" height="30" asp-append-version="true" />
                 @* Book Store *@
-                @_bookRepo.GetAppName()
-                @* @_configuration["AppName"] *@
+                @* @_bookRepo.GetAppName() *@
+                @_configuration["AppName"]
 
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -53,12 +62,49 @@
             </div>
         </div>
     </nav>
-   @*  @if (_configuration.GetValue<string>("NewBookAlert:DisplayNewBookAlert"))
-    {
-        <div class="alert alert-info" role="alert"> *@
-            @* This is message *@
-            @* @(_configuration.GetValue<string>("NewBookAlert:BookName")) *@
-       @*  </div>
-    } *@
     
+   @*   @if (_configuration.GetValue<bool>("NewBookAlert:DisplayNewBookAlert"))
+    {
+        <div class="alert alert-info" role="alert"> 
+            @* This is message *@
+  @*            @(_configuration.GetValue<string>("NewBookAlert:BookName"))
+        </div>
+    }   *@
+      @* @if (newBook.GetValue<bool>("DisplayNewBookAlert"))
+    {
+        <div class="alert alert-info" role="alert">  *@
+            @* This is message *@
+       @*      @(newBook.GetValue<string>("BookName")) 
+        </div>
+    } *@
+ @*    @if (newBook.DisplayNewBookAlert)
+    {
+        <div class="alert alert-info" role="alert"> 
+           
+            @newBook.BookName
+        </div>
+        
+    } *@
+ @*    @if (_newBookAlertConfiguration.Value.DisplayNewBookAlert)
+    {
+        <div class="alert alert-info" role="alert">
+
+            @_newBookAlertConfiguration.Value.BookName
+        </div>
+    }  *@
+     @if (newBookAlertConfiguration.DisplayNewBookAlert)
+    {
+        <div class="alert alert-info" role="alert">
+
+            @newBookAlertConfiguration.BookName
+        </div>
+    } 
+    @*  @if (thirdPartyBookAlertConfiguration.DisplayNewBookAlert)
+    {
+        <div class="alert alert-info" role="alert">
+
+            @thirdBookAlertConfiguration.BookName
+        </div>
+    } *@
+
 </header>
