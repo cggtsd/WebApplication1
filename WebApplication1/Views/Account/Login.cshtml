@@ -36,22 +36,22 @@
             <div class="col-md-4">
                 <form asp-action="Login">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                    <div class="form-group">
+                    <div class="form-group mb-3">
                         <label asp-for="Email" class="control-label"></label>
                         <input asp-for="Email" class="form-control" />
                         <span asp-validation-for="Email" class="text-danger"></span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mb-3">
                         <label asp-for="Password" class="control-label"></label>
                         <input asp-for="Password" class="form-control" />
                         <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mb-3">
                         <label asp-for="RememberMe" class="control-label"></label>
                         <input asp-for="RememberMe" class="form-control" />
                         <span asp-validation-for="RememberMe" class="text-danger"></span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mb-3">
                         <input type="submit" value="Login" class="btn btn-primary" />
                     </div>
                 </form>
@@ -62,7 +62,7 @@
         </div>
 
         <div>
-            <p>Click <a asp-controller="Account" asp-action="Signup">here</a> to signup</p>
+            <p>Click <a asp-controller="Account" asp-action="SignUp">here</a> to signup</p>
         </div>
 </div>
 

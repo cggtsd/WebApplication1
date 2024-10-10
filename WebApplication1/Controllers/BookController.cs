@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Dynamic;
@@ -37,7 +38,7 @@ namespace WebApplication1.Controllers
             var book = await _bookRepository.GetBookById(id);
             return View(book);
         }
-
+        [Authorize]
         public async Task<IActionResult> AddNewBook(bool isSuccess = false, int bookId = 0)
         {
             var model = new BookModelcs()

@@ -5,18 +5,24 @@ namespace WebApplication1.Repository
 {
     //public class MessageRepository(IOptions<NewBookAlertConfig> newBookAlertConfiguration) : IMessageRepository
     //public class MessageRepository(IOptionsSnapshot<NewBookAlertConfig> newBookAlertConfiguration) : IMessageRepository
-    public class MessageRepository(IOptionsMonitor<NewBookAlertConfig> newBookAlertConfiguration) : IMessageRepository
+    public class MessageRepository: IMessageRepository
     {
         //private readonly NewBookAlertConfig _newBookAlertConfiguration = newBookAlertConfiguration.Value;
-        //private readonly NewBookAlertConfig _newBookAlertConfiguration = newBookAlertConfiguration.CurrentValue;
-        private readonly IOptionsMonitor<NewBookAlertConfig> _newBookAlertConfiguration = newBookAlertConfiguration;
-        //_newBookAlertConfiguration.OnChange(config=>_newBookAlertConfiguartion=config);
+        //private NewBookAlertConfig _newBookAlertConfiguration;
+
+        private readonly IOptionsMonitor<NewBookAlertConfig> _newBookAlertConfiguration ;
+        
+        public MessageRepository(IOptionsMonitor<NewBookAlertConfig> newBookAlertConfiguration)
+        {
+            _newBookAlertConfiguration = newBookAlertConfiguration;
+            //newBookAlertConfiguration.OnChange(config=> _newBookAlertConfiguration = config);
+        }
 
 
         public string GetName()
         {
-            //return _newBookAlertConfiguration.BookName;
             return _newBookAlertConfiguration.CurrentValue.BookName;
+            //return _newBookAlertConfiguration.CurrentValue.BookName;
 
         }
     }

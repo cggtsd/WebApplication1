@@ -9,9 +9,9 @@
     // var newBook = _configuration.GetSection("NewBookAlert");
     // var newBook = new NewBookAlertConfig();
     // _configuration.Bind("NewBookAlert", newBook);
-    var newBookAlertConfiguration = _newBookAlertConfiguration.Value;
-    // var newBookAlertConfiguration = _newBookAlertConfiguration.Get("InternalBook");
-    // var thirdPartyBookAlertConfiguration = _newBookAlertConfiguration.Get("ThirdPartyBook");
+    // var newBookAlertConfiguration = _newBookAlertConfiguration.Value;
+    var newBookAlertConfiguration = _newBookAlertConfiguration.Get("InternalBook");
+    var thirdPartyBookAlertConfiguration = _newBookAlertConfiguration.Get("ThirdPartyBook");
 }
 <header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
@@ -31,10 +31,11 @@
             </button>
             <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <partial name="_logininfo"/>
+                    @* <li class="nav-item">
                         <a class="btn btn-outline-primary" asp-controller="Account" asp-action="Login">Login</a>
                         <a class="btn btn-primary" asp-controller="Account" asp-action="Signup">Register</a>
-                    </li>
+                    </li> *@
                 </ul>
                 <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
@@ -99,12 +100,12 @@
             @newBookAlertConfiguration.BookName
         </div>
     } 
-    @*  @if (thirdPartyBookAlertConfiguration.DisplayNewBookAlert)
+     @if (thirdPartyBookAlertConfiguration.DisplayNewBookAlert)
     {
         <div class="alert alert-info" role="alert">
 
-            @thirdBookAlertConfiguration.BookName
+            @thirdPartyBookAlertConfiguration.BookName
         </div>
-    } *@
+    }
 
 </header>

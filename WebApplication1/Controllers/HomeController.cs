@@ -22,9 +22,9 @@ namespace WebApplication1.Controllers
         {
             _logger = logger;
             //_configuration = configuration;
-            _newBookAlertConfiguration = newBookAlertConfiguration.Value;
-            //_newBookAlertConfiguration = newBookAlertConfiguration.Get("InternalBook");
-            //_thirdPartyBookConfiguration = newBookAlertConfiguration.Get("ThirdPartyBook");
+            //_newBookAlertConfiguration = newBookAlertConfiguration.Value;
+            _newBookAlertConfiguration = newBookAlertConfiguration.Get("InternalBook");
+            _thirdPartyBookConfiguration = newBookAlertConfiguration.Get("ThirdPartyBook");
             _messageRepository = messageRepository;
         }
         [ViewData]
@@ -69,9 +69,9 @@ namespace WebApplication1.Controllers
             //_configuration.Bind("NewBookAlert", newBookAlert);
             //bool isDisplay = newBookAlert.DisplayNewBookAlert;
             //bool isDisplay = _newBookAlertConfiguration.DisplayNewBookAlert;
-            //bool isDisplay = _newBookAlertConfiguration.DisplayNewBookAlert;
-            //bool isDisplay1 = _thirdPartyConfiguration.DisplayNewBookAlert;
-            var value = _messageRepository.GetName();
+            bool isDisplay = _newBookAlertConfiguration.DisplayNewBookAlert;
+            bool isDisplay1 = _thirdPartyBookConfiguration.DisplayNewBookAlert;
+            //var value = _messageRepository.GetName();
 
             return View();
         }

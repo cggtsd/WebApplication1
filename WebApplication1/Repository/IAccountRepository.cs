@@ -6,5 +6,7 @@ namespace WebApplication1.Repository
     public interface IAccountRepository
     {
         Task<IdentityResult> CreateUserAsync(SignUpUserModel userModel);
+        Task<SignInResult> PasswordAsync(SigninModel signinModel);
+        Task SignOutAsync();
     }
 }
