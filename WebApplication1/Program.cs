@@ -1,10 +1,13 @@
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 using WebApplication1.Controllers;
 using WebApplication1.Data;
+using WebApplication1.Helpers;
 using WebApplication1.Models;
 using WebApplication1.Repository;
+using WebApplication1.Service;
 
 namespace WebApplication1
 {
@@ -21,6 +24,7 @@ namespace WebApplication1
             builder.Services.AddDbContext<BookStoreContext>(options =>options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
             //builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<BookStoreContext>();
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<BookStoreContext>();
+            //builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<BookStoreContext>().AddDefaultTokenProviders();
             builder.Services.Configure<IdentityOptions>(options =>
             {
                 options.Password.RequiredLength = 5;
@@ -29,9 +33,15 @@ namespace WebApplication1
                 options.Password.RequireLowercase = false;
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireUppercase = false;
-
-
+                //options.SignIn.RequireConfirmedEmail = true;
+                //options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(20);
+                //options.Lockout.MaxFailedAccessAttempts = 3;
             });
+            //builder.Services.Configure<DataProtectionTokenProviderOptions>(options =>
+            //{
+            //    options.TokenLifespan = TimeSpan.FromHours(5);
+            //});
+            builder.Services.ConfigureApplicationCookie(config => config.LoginPath = _configuration["Application:LoginPath"]);
             builder.Services.AddControllersWithViews();
 #if DEBUG
             builder.Services.AddRazorPages().AddRazorRuntimeCompilation()
@@ -44,8 +54,10 @@ namespace WebApplication1
             builder.Services.AddSingleton<IMessageRepository,MessageRepository>();
 
             //builder.Services.Configure<NewBookAlertConfig>(_configuration.GetSection("NewBookAlert"));
-
-
+            builder.Services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, ApplicationUserClaimsPrincipalFactory>();
+            builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<IEmailService, EmailService>();
+            builder.Services.Configure<SMTPConfigModel>(_configuration.GetSection("SMTPConfig"));
             builder.Services.Configure<NewBookAlertConfig>("ThirdPartyBook", _configuration.GetSection("ThirdPartyBook"));
             builder.Services.Configure<NewBookAlertConfig>("InternalBook", _configuration.GetSection("NewBookAlert"));
 
@@ -79,6 +91,10 @@ namespace WebApplication1
             //    name: "AboutUs",
             //    pattern: "about-us/{id?}",
             //    defaults: new { controller = "Home", action = "AboutUs" });
+          
+            app.MapControllerRoute(
+                name: "MyArea",
+               pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
           
             app.MapControllers();
 

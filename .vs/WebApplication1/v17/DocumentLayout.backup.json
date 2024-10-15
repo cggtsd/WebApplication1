@@ -3,43 +3,135 @@
   "WorkspaceRootPath": "C:\\dotnet\\WebApplication1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\models\\smtpconfigmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\smtpconfigmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\models\\useremailoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\useremailoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\emailtemplate\\testemail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\emailtemplate\\testemail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\repository\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\repository\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\models\\changepasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\changepasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\shared\\_logininfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\_logininfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\helpers\\applicationuserclaimsprincipalfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\helpers\\applicationuserclaimsprincipalfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\models\\signinmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\signinmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BookStore/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\service\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\areas\\financial\\views\\dashboard\\graph.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\areas\\financial\\views\\dashboard\\graph.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\areas\\financial\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\areas\\financial\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\webapplication1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\webapplication1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\repository\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\repository\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\models\\resetpasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\resetpasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\service\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\emailtemplate\\forgotpassword.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\emailtemplate\\forgotpassword.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\emailtemplate\\emailconfirm.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\emailtemplate\\emailconfirm.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\views\\account\\confirmemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\account\\confirmemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\models\\forgotpasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\forgotpasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\models\\emailconfirmmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\emailconfirmmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BookStore/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\data\\bookstorecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -52,14 +144,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\models\\signupusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\signupusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{328F1C35-4DDE-4357-9FC8-02A239E9335F}|WebApplication1\\WebApplication1.csproj|c:\\dotnet\\webapplication1\\webapplication1\\models\\newbookalertconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -133,76 +217,400 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_logininfo.cshtml",
-              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Shared\\_logininfo.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_logininfo.cshtml",
-              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Shared\\_logininfo.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_logininfo.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-10T10:55:07.554Z",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAA7wD0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T10:45:20.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:45:50.904Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IAccountRepository.cs",
-              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Repository\\IAccountRepository.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Repository\\IAccountRepository.cs",
-              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Repository\\IAccountRepository.cs",
-              "RelativeToolTip": "WebApplication1\\Repository\\IAccountRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication1\\appsettings.json",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\appsettings.json",
+              "RelativeToolTip": "WebApplication1\\appsettings.json",
+              "ViewState": "AgIAABwAAAAAAAAAAAAcwCgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-11T09:57:14.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SMTPConfigModel.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\SMTPConfigModel.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\SMTPConfigModel.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\SMTPConfigModel.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\SMTPConfigModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwAcAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T10:36:30.498Z",
+              "WhenOpened": "2024-10-11T10:03:49.424Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountRepository.cs",
-              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Repository\\AccountRepository.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Repository\\AccountRepository.cs",
-              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Repository\\AccountRepository.cs",
-              "RelativeToolTip": "WebApplication1\\Repository\\AccountRepository.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCcAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T09:57:19.053Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Signup.cshtml",
-              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Account\\Signup.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Account\\Signup.cshtml",
-              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Account\\Signup.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Account\\Signup.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAACoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-10T09:47:29.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Program.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
               "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Program.cs",
               "RelativeToolTip": "WebApplication1\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAowBYAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwDkAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-07T10:01:01.908Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TestEmail.html",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\EmailTemplate\\TestEmail.html",
+              "RelativeDocumentMoniker": "WebApplication1\\EmailTemplate\\TestEmail.html",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\EmailTemplate\\TestEmail.html",
+              "RelativeToolTip": "WebApplication1\\EmailTemplate\\TestEmail.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-10-11T10:10:51.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Service\\EmailService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\EmailService.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Service\\EmailService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\EmailService.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAiwDsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T10:08:55.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserEmailOptions.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\UserEmailOptions.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\UserEmailOptions.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\UserEmailOptions.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\UserEmailOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T10:12:32.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Account\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Account\\ChangePassword.cshtml",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Account\\ChangePassword.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Account\\ChangePassword.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-11T09:14:21.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Repository\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Repository\\AccountRepository.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Repository\\AccountRepository.cs",
+              "RelativeToolTip": "WebApplication1\\Repository\\AccountRepository.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAA9wAsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:57:19.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "ChangePasswordModel.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\ChangePasswordModel.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\ChangePasswordModel.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\ChangePasswordModel.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\ChangePasswordModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T09:00:34.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Service\\UserService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\UserService.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Service\\UserService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\UserService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwAgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T08:33:42.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_logininfo.cshtml",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Shared\\_logininfo.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_logininfo.cshtml",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Shared\\_logininfo.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_logininfo.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T10:55:07.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApplicationUserClaimsPrincipalFactory.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Helpers\\ApplicationUserClaimsPrincipalFactory.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Helpers\\ApplicationUserClaimsPrincipalFactory.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Helpers\\ApplicationUserClaimsPrincipalFactory.cs",
+              "RelativeToolTip": "WebApplication1\\Helpers\\ApplicationUserClaimsPrincipalFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T09:53:08.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAqwDUAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T10:47:19.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SigninModel.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\SigninModel.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\SigninModel.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\SigninModel.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\SigninModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T10:33:39.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Account\\ForgotPassword.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAqwCEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T06:53:22.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Service\\IUserService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\IUserService.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Service\\IUserService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T08:56:51.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_header.cshtml",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Shared\\_header.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_header.cshtml",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Shared\\_header.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_header.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAD4AAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T06:41:16.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Areas\\Financial\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Areas\\Financial\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Areas\\Financial\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "WebApplication1\\Areas\\Financial\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T09:36:40.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Graph.cshtml",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Areas\\Financial\\Views\\Dashboard\\Graph.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Areas\\Financial\\Views\\Dashboard\\Graph.cshtml",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Areas\\Financial\\Views\\Dashboard\\Graph.cshtml",
+              "RelativeToolTip": "WebApplication1\\Areas\\Financial\\Views\\Dashboard\\Graph.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T09:38:51.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Account\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Account\\ResetPassword.cshtml",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Account\\ResetPassword.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Account\\ResetPassword.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwCQAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T08:49:28.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IAccountRepository.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Repository\\IAccountRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Repository\\IAccountRepository.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Repository\\IAccountRepository.cs",
+              "RelativeToolTip": "WebApplication1\\Repository\\IAccountRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA8AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T10:36:30.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "WebApplication1.csproj",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+              "RelativeDocumentMoniker": "WebApplication1\\WebApplication1.csproj",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+              "RelativeToolTip": "WebApplication1\\WebApplication1.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-11T10:09:55.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ResetPasswordModel.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\ResetPasswordModel.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\ResetPasswordModel.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\ResetPasswordModel.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\ResetPasswordModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwA8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T07:40:06.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Service\\IEmailService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\IEmailService.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Service\\IEmailService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T05:19:38.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ForgotPassword.html",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\EmailTemplate\\ForgotPassword.html",
+              "RelativeDocumentMoniker": "WebApplication1\\EmailTemplate\\ForgotPassword.html",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\EmailTemplate\\ForgotPassword.html",
+              "RelativeToolTip": "WebApplication1\\EmailTemplate\\ForgotPassword.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-10-14T07:05:50.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "EmailConfirm.html",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\EmailTemplate\\EmailConfirm.html",
+              "RelativeDocumentMoniker": "WebApplication1\\EmailTemplate\\EmailConfirm.html",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\EmailTemplate\\EmailConfirm.html",
+              "RelativeToolTip": "WebApplication1\\EmailTemplate\\EmailConfirm.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-10-11T11:28:55.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ConfirmEmail.cshtml",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Account\\ConfirmEmail.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Account\\ConfirmEmail.cshtml",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Account\\ConfirmEmail.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Account\\ConfirmEmail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T05:37:48.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ForgotPasswordModel.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\ForgotPasswordModel.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\ForgotPasswordModel.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\ForgotPasswordModel.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\ForgotPasswordModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T06:45:24.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "EmailConfirmModel.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\EmailConfirmModel.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\EmailConfirmModel.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\EmailConfirmModel.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\EmailConfirmModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T06:02:09.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "BookStoreContext.cs",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Data\\BookStoreContext.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Data\\BookStoreContext.cs",
@@ -210,74 +618,32 @@
               "RelativeToolTip": "WebApplication1\\Data\\BookStoreContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T10:21:13.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T10:21:13.479Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAqwEQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 31,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Controllers\\BookController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\BookController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwCEAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T09:45:50.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T11:01:57.961Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SigninModel.cs",
-              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\SigninModel.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\SigninModel.cs",
-              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\SigninModel.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\SigninModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T10:33:39.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADUAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-10T10:47:19.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_header.cshtml",
-              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Shared\\_header.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_header.cshtml",
-              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Shared\\_header.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_header.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACEAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-03T06:41:16.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentIndex": 32,
+              "Title": "dbo.AspNetUsers.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BookStore/True/SqlTable/dbo.AspNetUsers.sql",
-              "ToolTip": "dbo.AspNetUsers [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BookStore/True/SqlTable/dbo.AspNetUsers.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-10-10T10:50:04.847Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T10:50:04.847Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 34,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Models\\ApplicationUser.cs",
@@ -285,12 +651,11 @@
               "RelativeToolTip": "WebApplication1\\Models\\ApplicationUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T10:14:36.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T10:14:36.927Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 35,
               "Title": "SignUpUserModel.cs",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\SignUpUserModel.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Models\\SignUpUserModel.cs",
@@ -298,38 +663,11 @@
               "RelativeToolTip": "WebApplication1\\Models\\SignUpUserModel.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T09:44:19.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T09:44:19.686Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAswEAAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T05:38:54.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\appsettings.json",
-              "RelativeDocumentMoniker": "WebApplication1\\appsettings.json",
-              "ToolTip": "C:\\dotnet\\WebApplication1\\WebApplication1\\appsettings.json",
-              "RelativeToolTip": "WebApplication1\\appsettings.json",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-04T06:33:01.171Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 36,
               "Title": "NewBookAlertConfig.cs",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\NewBookAlertConfig.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Models\\NewBookAlertConfig.cs",
@@ -341,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 39,
               "Title": "BookRepository.cs",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Repository\\BookRepository.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Repository\\BookRepository.cs",
@@ -353,7 +691,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 40,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Index.cshtml",
@@ -365,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 41,
               "Title": "TopBooksViewComponent.cs",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Components\\TopBooksViewComponent.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Components\\TopBooksViewComponent.cs",
@@ -377,7 +715,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 38,
               "Title": "AddNewBook.cshtml",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Book\\AddNewBook.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Views\\Book\\AddNewBook.cshtml",
@@ -389,7 +727,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 37,
               "Title": "BookModelcs.cs",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Models\\BookModelcs.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Models\\BookModelcs.cs",
@@ -401,7 +739,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 42,
               "Title": "LanguageRepository.cs",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Repository\\LanguageRepository.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Repository\\LanguageRepository.cs",
@@ -413,7 +751,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 43,
               "Title": "IBookRepository.cs",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Repository\\IBookRepository.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Repository\\IBookRepository.cs",
@@ -425,7 +763,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 44,
               "Title": "_bookThumbnail.cshtml",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Shared\\_bookThumbnail.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_bookThumbnail.cshtml",
@@ -437,7 +775,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 45,
               "Title": "Default.cshtml",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Shared\\Components\\TopBooks\\Default.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\Components\\TopBooks\\Default.cshtml",
@@ -449,7 +787,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 46,
               "Title": "GetBook.cshtml",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Book\\GetBook.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Views\\Book\\GetBook.cshtml",
@@ -461,7 +799,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 47,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
@@ -473,7 +811,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 48,
               "Title": "GetAllBooks.cshtml",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Book\\GetAllBooks.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Views\\Book\\GetAllBooks.cshtml",
@@ -485,7 +823,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 50,
               "Title": "Books.cs",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Data\\Books.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Data\\Books.cs",
@@ -497,7 +835,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 49,
               "Title": "_footer.cshtml",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Views\\Shared\\_footer.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_footer.cshtml",
@@ -509,7 +847,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 51,
               "Title": "MyCustomValidationAttribute.cs",
               "DocumentMoniker": "C:\\dotnet\\WebApplication1\\WebApplication1\\Helpers\\MyCustomValidationAttribute.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Helpers\\MyCustomValidationAttribute.cs",

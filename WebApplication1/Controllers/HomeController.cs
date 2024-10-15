@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Dynamic;
 using WebApplication1.Models;
 using WebApplication1.Repository;
+using WebApplication1.Service;
 
 namespace WebApplication1.Controllers
 {
@@ -15,10 +16,17 @@ namespace WebApplication1.Controllers
         private readonly NewBookAlertConfig _newBookAlertConfiguration;
         private readonly NewBookAlertConfig _thirdPartyBookConfiguration;
         private readonly IMessageRepository _messageRepository
-;        public HomeController(ILogger<HomeController> logger,
+;
+        private readonly IUserService _userService;
+        private readonly IEmailService _emailService;
+
+        public HomeController(ILogger<HomeController> logger,
          IOptionsSnapshot<NewBookAlertConfig> newBookAlertConfiguration,
        //IConfiguration configuration,
-       IMessageRepository messageRepository)
+       IMessageRepository messageRepository
+      , IUserService userService
+      ,IEmailService emailService
+      )
         {
             _logger = logger;
             //_configuration = configuration;
@@ -26,6 +34,8 @@ namespace WebApplication1.Controllers
             _newBookAlertConfiguration = newBookAlertConfiguration.Get("InternalBook");
             _thirdPartyBookConfiguration = newBookAlertConfiguration.Get("ThirdPartyBook");
             _messageRepository = messageRepository;
+            _userService = userService;
+            _emailService = emailService;
         }
         [ViewData]
         public string CustomProperty { get; set; }
@@ -36,8 +46,20 @@ namespace WebApplication1.Controllers
         //[Route("")]
         [Route("~/")]
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            //var userId = _userService.GetUserId();
+            //var isLoggedIn = _userService.IsAuthenticated();
+
+            UserEmailOptions options = new()
+            {
+                ToEmails = ["user@test.com"],
+                //Placeholders = new List<KeyValuePair<string, string>>()
+                //{
+                //    new KeyValuePair<string, string>("{{username}}","Fathima")
+                //}
+            };
+             await _emailService.SendTestEmail(options);
             //ViewBag.Name = "CGG";
             //ViewBag.Name = "Fathima";
             //ViewBag.Data = new { Id = 1, Name = "Fathima" };
@@ -69,8 +91,8 @@ namespace WebApplication1.Controllers
             //_configuration.Bind("NewBookAlert", newBookAlert);
             //bool isDisplay = newBookAlert.DisplayNewBookAlert;
             //bool isDisplay = _newBookAlertConfiguration.DisplayNewBookAlert;
-            bool isDisplay = _newBookAlertConfiguration.DisplayNewBookAlert;
-            bool isDisplay1 = _thirdPartyBookConfiguration.DisplayNewBookAlert;
+            //bool isDisplay = _newBookAlertConfiguration.DisplayNewBookAlert;
+            //bool isDisplay1 = _thirdPartyBookConfiguration.DisplayNewBookAlert;
             //var value = _messageRepository.GetName();
 
             return View();
