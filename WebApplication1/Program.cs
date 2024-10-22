@@ -23,8 +23,8 @@ namespace WebApplication1
             //builder.Services.AddDbContext<BookStoreContext>(options => options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=BookStore;Integrated Security=true;"));
             builder.Services.AddDbContext<BookStoreContext>(options =>options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
             //builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<BookStoreContext>();
-            builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<BookStoreContext>();
-            //builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<BookStoreContext>().AddDefaultTokenProviders();
+            //builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<BookStoreContext>();
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<BookStoreContext>().AddDefaultTokenProviders();
             builder.Services.Configure<IdentityOptions>(options =>
             {
                 options.Password.RequiredLength = 5;
@@ -33,7 +33,7 @@ namespace WebApplication1
                 options.Password.RequireLowercase = false;
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireUppercase = false;
-                //options.SignIn.RequireConfirmedEmail = true;
+                options.SignIn.RequireConfirmedEmail = true;
                 //options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(20);
                 //options.Lockout.MaxFailedAccessAttempts = 3;
             });

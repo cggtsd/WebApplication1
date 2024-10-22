@@ -51,15 +51,15 @@ namespace WebApplication1.Controllers
             //var userId = _userService.GetUserId();
             //var isLoggedIn = _userService.IsAuthenticated();
 
-            UserEmailOptions options = new()
-            {
-                ToEmails = ["user@test.com"],
-                //Placeholders = new List<KeyValuePair<string, string>>()
-                //{
-                //    new KeyValuePair<string, string>("{{username}}","Fathima")
-                //}
-            };
-             await _emailService.SendTestEmail(options);
+            //UserEmailOptions options = new()
+            //{
+            //    ToEmails = ["user@test.com"],
+            //    Placeholders = new List<KeyValuePair<string, string>>()
+            //    {
+            //        new KeyValuePair<string, string>("{{Username}}","Fathima")
+            //    }
+            //};
+            // await _emailService.SendTestEmail(options);
             //ViewBag.Name = "CGG";
             //ViewBag.Name = "Fathima";
             //ViewBag.Data = new { Id = 1, Name = "Fathima" };

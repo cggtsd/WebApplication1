@@ -36,12 +36,12 @@ namespace WebApplication1.Repository
             var result= await _userManager.CreateAsync(user, userModel.Password);
             if (result.Succeeded)
             {
-                //var token= await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                //var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                 //if (!string.IsNullOrEmpty(token))
                 //{
                 //    await SendEmailConfirmationAsync(user, token);
                 //}
-                //await GenerateEmailConfirmationTokenAsync(user);
+                await GenerateEmailConfirmationTokenAsync(user);
             }
             return result;
         }
@@ -101,11 +101,11 @@ namespace WebApplication1.Repository
                 ToEmails = [user.Email],
                 Placeholders = new List<KeyValuePair<string, string>>()
                 {
-                    new KeyValuePair<string, string>("{{username}}",user.FirstName),
-                    new KeyValuePair<string, string>("{{Link}}",string.Format(appDomain+confirmationLink,user.Id,token))
+                    new KeyValuePair<string, string>("{{Username}}",user.FirstName),
+                    new KeyValuePair<string, string>("{{Link}}",string.Format(appDomain + confirmationLink,user.Id,token))
                 }
             };
-             //await _emailService.SendEmailForConfirmation(options);
+             await _emailService.SendEmailForConfirmation(options);
 
         }
         private async Task SendForgotPasswordEmail(ApplicationUser user, string token)
@@ -117,7 +117,7 @@ namespace WebApplication1.Repository
                 ToEmails = [user.Email],
                 Placeholders = new List<KeyValuePair<string, string>>()
                 {
-                    new KeyValuePair<string, string>("{{username}}",user.FirstName),
+                    new KeyValuePair<string, string>("{{Username}}",user.FirstName),
                     new KeyValuePair<string, string>("{{Link}}",string.Format(appDomain+confirmationLink,user.Id,token))
                 }
             };

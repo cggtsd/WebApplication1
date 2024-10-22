@@ -13,10 +13,10 @@ namespace WebApplication1.Service
 
         public async Task SendTestEmail(UserEmailOptions emailOptions)
         {
-            emailOptions.Subject = "This is test email subject from book store web app";
-            //emailOptions.Subject = UpdatePlaceholders("Hello {{username}},This is test email subject from book store web app",emailOptions.Placeholders);
-            emailOptions.Body = GetEmailBody("TestEmail");
-            //emailOptions.Body = UpdatePlaceholders(GetEmailBody("TestEmail"),emailOptions.Placeholders);
+            //emailOptions.Subject = "This is test email subject from book store web app";
+            emailOptions.Subject = UpdatePlaceholders("Hello {{Username}},This is test email subject from book store web app", emailOptions.Placeholders);
+            //emailOptions.Body = GetEmailBody("TestEmail");
+            emailOptions.Body = UpdatePlaceholders(GetEmailBody("TestEmail"),emailOptions.Placeholders);
             await SendEmail(emailOptions);
             
         } 
@@ -24,7 +24,7 @@ namespace WebApplication1.Service
         {
            
 
-            emailOptions.Subject = UpdatePlaceholders("Hello {{username}},Confirm your email id :",emailOptions.Placeholders);
+            emailOptions.Subject = UpdatePlaceholders("Hello {{Username}},Confirm your email id :",emailOptions.Placeholders);
 
 
             emailOptions.Body = UpdatePlaceholders(GetEmailBody("EmailConfirm"),emailOptions.Placeholders);
