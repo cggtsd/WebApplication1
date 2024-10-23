@@ -35,7 +35,7 @@ namespace WebApplication1.Service
         {
            
 
-            emailOptions.Subject = UpdatePlaceholders("Hello {{username}},reset your password :",emailOptions.Placeholders);
+            emailOptions.Subject = UpdatePlaceholders("Hello {{Username}},reset your password :",emailOptions.Placeholders);
 
 
             emailOptions.Body = UpdatePlaceholders(GetEmailBody("ForgotPassword"),emailOptions.Placeholders);

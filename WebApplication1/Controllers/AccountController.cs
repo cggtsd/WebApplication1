@@ -55,8 +55,10 @@ namespace WebApplication1.Controllers
                 var result = await _accountRepository.PasswordAsync(signinModel);
                 if (result.Succeeded)
                 {
+                    returnUrl = returnUrl=="/reset-password" ? "" : returnUrl;
                     if (!string.IsNullOrEmpty(returnUrl))
                     {
+                        
                         return LocalRedirect(returnUrl);
                     }
                     return RedirectToAction("Index", "Home");
@@ -165,11 +167,11 @@ namespace WebApplication1.Controllers
             if (ModelState.IsValid)
             {
                 //code here
-                //var user= await _accountRepository.GetUserByEmailAsync(model.Email);
-                //if (user != null)
-                //{
-                //    await _accountRepository.GenerateForgotPasswordTokenAsync(user);
-                //}
+                var user = await _accountRepository.GetUserByEmailAsync(model.Email);
+                if (user != null)
+                {
+                    await _accountRepository.GenerateForgotPasswordTokenAsync(user);
+                }
                 ModelState.Clear();
                 model.EmailSent = true;
             }

@@ -14,7 +14,7 @@ namespace WebApplication1
     public class Program
     {
         
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
             IConfiguration _configuration = builder.Configuration;
@@ -24,7 +24,8 @@ namespace WebApplication1
             builder.Services.AddDbContext<BookStoreContext>(options =>options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
             //builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<BookStoreContext>();
             //builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<BookStoreContext>();
-            builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<BookStoreContext>().AddDefaultTokenProviders();
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<BookStoreContext>()
+                                .AddDefaultTokenProviders();
             builder.Services.Configure<IdentityOptions>(options =>
             {
                 options.Password.RequiredLength = 5;
@@ -45,7 +46,7 @@ namespace WebApplication1
             builder.Services.AddControllersWithViews();
 #if DEBUG
             builder.Services.AddRazorPages().AddRazorRuntimeCompilation()
-                .AddViewOptions(static options => options.HtmlHelperOptions.ClientValidationEnabled = false);
+                .AddViewOptions(static options => options.HtmlHelperOptions.ClientValidationEnabled = true);
 #endif
             builder.Services.AddScoped<IBookRepository,BookRepository>();
             builder.Services.AddScoped<ILanguageRepository,LanguageRepository>();
@@ -97,6 +98,33 @@ namespace WebApplication1
                pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
           
             app.MapControllers();
+            using (var scope = app.Services.CreateScope())
+            {
+                var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+                var roles = new[] { "Admin", "Manager", "Member" };
+                foreach (var role in roles)
+                {
+                    if (!await roleManager.RoleExistsAsync(role))
+                    {
+                        await roleManager.CreateAsync(new IdentityRole(role));
+                    }
+                }
+            }
+            using (var scope = app.Services.CreateScope())
+            {
+                var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+                string email = "admin@admin.com";
+                string password = "54321";
+                if (await userManager.FindByEmailAsync(email) == null)
+                {
+                    var user = new ApplicationUser();
+                    user.UserName = email;
+                    user.Email = email;
+                    user.EmailConfirmed = true;
+                    await userManager.CreateAsync(user, password);
+                    await userManager.AddToRoleAsync(user, "Admin");
+                }
+            }
 
             app.Run();
         }

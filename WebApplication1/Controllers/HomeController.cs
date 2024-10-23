@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using System.Diagnostics;
@@ -115,6 +117,7 @@ namespace WebApplication1.Controllers
         }
         //[Route("~/contact-us")]
         [Route("~/contact-us", Name = "contact-us")]
+        [Authorize(Roles="Admin")]
         public IActionResult ContactUs()
         {
             return View();

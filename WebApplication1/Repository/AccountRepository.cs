@@ -5,7 +5,7 @@ using WebApplication1.Service;
 namespace WebApplication1.Repository
 {
     //public class AccountRepository(UserManager<IdentityUser> userManager) : IAccountRepository
-    public class AccountRepository(UserManager<ApplicationUser> userManager,SignInManager<ApplicationUser> signinManager,IUserService userService,IEmailService emailService,IConfiguration configuration) : IAccountRepository
+    public class AccountRepository(UserManager<ApplicationUser> userManager,SignInManager<ApplicationUser> signinManager,IUserService userService,IEmailService emailService,IConfiguration configuration,RoleManager<IdentityRole> roleManager) : IAccountRepository
     {
         //private readonly UserManager<IdentityUser> _userManager = userManager;
         private readonly UserManager<ApplicationUser> _userManager = userManager;
@@ -13,6 +13,7 @@ namespace WebApplication1.Repository
         private readonly IUserService _userService = userService;
         private readonly IEmailService _emailService = emailService;
         private readonly IConfiguration _configuration = configuration;
+        private readonly RoleManager<IdentityRole> _roleManager = roleManager;
 
         public async Task<ApplicationUser> GetUserByEmailAsync(string email)
         {
