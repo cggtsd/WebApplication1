@@ -66,7 +66,8 @@ namespace WebApplication1.Repository
         }
         public async Task<SignInResult> PasswordAsync(SigninModel signinModel)
         {
-            var result = await _signinManager.PasswordSignInAsync(signinModel.Email, signinModel.Password, signinModel.RememberMe, false);
+            //var result = await _signinManager.PasswordSignInAsync(signinModel.Email, signinModel.Password, signinModel.RememberMe, false);
+            var result = await _signinManager.PasswordSignInAsync(signinModel.Email, signinModel.Password, signinModel.RememberMe, true);
             return result;
 
          }

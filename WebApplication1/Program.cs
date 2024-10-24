@@ -35,13 +35,13 @@ namespace WebApplication1
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireUppercase = false;
                 options.SignIn.RequireConfirmedEmail = true;
-                //options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(20);
-                //options.Lockout.MaxFailedAccessAttempts = 3;
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
+                options.Lockout.MaxFailedAccessAttempts = 3;
             });
-            //builder.Services.Configure<DataProtectionTokenProviderOptions>(options =>
-            //{
-            //    options.TokenLifespan = TimeSpan.FromHours(5);
-            //});
+            builder.Services.Configure<DataProtectionTokenProviderOptions>(options =>
+            {
+                options.TokenLifespan = TimeSpan.FromHours(5);
+            });
             builder.Services.ConfigureApplicationCookie(config => config.LoginPath = _configuration["Application:LoginPath"]);
             builder.Services.AddControllersWithViews();
 #if DEBUG
@@ -53,6 +53,7 @@ namespace WebApplication1
             builder.Services.AddScoped<IAccountRepository,AccountRepository>();
 
             builder.Services.AddSingleton<IMessageRepository,MessageRepository>();
+            builder.Services.AddSingleton<IHttpContextAccessor,HttpContextAccessor>();
 
             //builder.Services.Configure<NewBookAlertConfig>(_configuration.GetSection("NewBookAlert"));
             builder.Services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, ApplicationUserClaimsPrincipalFactory>();
@@ -62,6 +63,8 @@ namespace WebApplication1
             builder.Services.Configure<NewBookAlertConfig>("ThirdPartyBook", _configuration.GetSection("ThirdPartyBook"));
             builder.Services.Configure<NewBookAlertConfig>("InternalBook", _configuration.GetSection("NewBookAlert"));
 
+            //builder.Services.AddSession();
+            builder.Services.AddSession(options=>options.IdleTimeout=TimeSpan.FromMinutes(5));
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -71,7 +74,7 @@ namespace WebApplication1
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseStaticFiles(new StaticFileOptions()
@@ -126,6 +129,7 @@ namespace WebApplication1
                 }
             }
 
+           
             app.Run();
         }
     }

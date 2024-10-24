@@ -7,6 +7,8 @@ using System.Dynamic;
 using WebApplication1.Models;
 using WebApplication1.Repository;
 using WebApplication1.Service;
+using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 
 namespace WebApplication1.Controllers
 {
@@ -50,6 +52,14 @@ namespace WebApplication1.Controllers
 
         public async Task<IActionResult> Index()
         {
+            ViewData["data1"] = "View Data";
+            ViewBag.data2 = "View Bag";
+            TempData["data3"] = "Temp Data";
+            TempData.Keep("data3");
+            //TempData["data4"] = new List<string> { "cricket", "football", "hockey" };
+            //TempData["data4"] = null;
+            HttpContext.Session.SetString("MyKey", "CGG");
+            TempData["SessionId"] = HttpContext.Session.Id;
             //var userId = _userService.GetUserId();
             //var isLoggedIn = _userService.IsAuthenticated();
 
@@ -102,6 +112,21 @@ namespace WebApplication1.Controllers
 
         public IActionResult Privacy()
         {
+            List<Categories> categories = new List<Categories>();
+            categories.Add(new Categories { CategoryId=1,CategoryName="Electronics",IsActive=true});
+            categories.Add(new Categories { CategoryId=2,CategoryName="Clothes",IsActive=true});
+            categories.Add(new Categories { CategoryId=3,CategoryName="Books",IsActive=false});
+            string categoriesString = JsonConvert.SerializeObject(categories);
+            HttpContext.Session.SetString("CategoriesList",categoriesString);
+            Users user = new Users
+            {
+                UserId = 1,
+                FirstName = "Fathima",
+                LastName = "Fathima",
+                IsActive = true,
+            };
+            string userString = JsonConvert.SerializeObject(user);
+            HttpContext.Session.SetString("UsersData",userString);
             return View();
         }
         //[Route("about-us/{id}/test/{name}")]
@@ -109,10 +134,15 @@ namespace WebApplication1.Controllers
         //[HttpGet]
         //[HttpGet("about-us")]
         //[HttpGet("about-us",Name ="about-us",Order =1)]
-        [Route("~/about-us/{name:alpha:minlength(5)}")]
+        [Route("~/about-us/{name:alpha:minlength(5)?}")]
         public IActionResult AboutUs(string name)
         {
             ViewData["Title"] = "AboutUs Page from Controller ";
+            TempData.Keep("data3");
+            if (HttpContext.Session.GetString("MyKey") != null)
+            {
+                ViewBag.Data = HttpContext.Session.GetString("MyKey").ToString();
+            }
             return View();
         }
         //[Route("~/contact-us")]
@@ -121,6 +151,15 @@ namespace WebApplication1.Controllers
         public IActionResult ContactUs()
         {
             return View();
+        }
+        [Route("~/signout")]
+        public IActionResult Logout()
+        {
+            if (HttpContext.Session.GetString("MyKey") != null)
+            {
+                HttpContext.Session.Remove("MyKey");
+            }
+            return RedirectToAction("AboutUs","Home");
         }
         [Route("~/test/a{a}")]
         public string Test(string a)
